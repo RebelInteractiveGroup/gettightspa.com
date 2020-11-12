@@ -3,10 +3,12 @@ import dateFilter from '../filters/date-filter';
 import markdownFilter from '../filters/markdown-filter';
 import w3DateFilter from '../filters/w3-date-filter';
 import jquery from 'jquery';
-import bootstrap from 'boostrap';
+import popper from 'popper.js';
+import bootstrap from 'bootstrap';
 
 export {
   jquery,
+  popper,
   bootstrap,
   helpers,
   dateFilter,
