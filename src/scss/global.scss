@@ -4,7 +4,7 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 // include heme variable overrides
-@import 'config'; 
+@import 'theme'; 
 
 // Pull in the FontAwesome
 $colors: map-merge(
