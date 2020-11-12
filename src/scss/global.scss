@@ -1,15 +1,45 @@
 @import 'config';
 
-// Pull in the stalfos lib
-@import '../../node_modules/stalfos/stalfos.scss';
+// Pull in the bootstrap lib
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
-// Local mixins
-@import 'mixins/dark-mode';
+// Pull in the FontAwesome
+$colors: map-merge(
+  (
+    "light-blue": $light-blue,
+    "baby-blue": $baby-blue,
+  ),
+  $colors
+);
 
-@import 'theme';
+$theme-colors: map-merge(
+  (
+    "white":     $white,
+    "light-blue":    $light-blue,
+    "baby-blue": $baby-blue
+  ),
+  $theme-colors
+);
 
-// Local dependencies
-@import 'typography';
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    @include button-variant($value, $value);
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    @include button-outline-variant($value);
+  }
+}
+
+.btn {
+  color: $primary;
+}
+.btn-primary, .btn-danger, .btn-secondary, .btn-baby-blue {
+  color: $white;
+}
+
 
 /**
  * GLOBAL STYLES
@@ -36,9 +66,7 @@ hr {
   display: block;
   height: 1px;
   max-width: 500px;
-  background: var(--color-stroke);
   border: none;
-  margin: get-size(900) auto;
 }
 
 // For when metric attributes are added to img elements
@@ -47,7 +75,7 @@ img {
 }
 
 :focus {
-  outline: 1px solid var(--color-theme-primary-glare);
+  //outline: 1px solid var(--color-theme-primary-glare);
   outline-offset: 0.25rem;
 }
 
@@ -55,6 +83,7 @@ img {
  * PROJECT IMPORTS
  */
 
+ /**
 // Utils
 @import 'utilities/inner-wrapper';
 @import 'utilities/visually-hidden';
@@ -74,3 +103,4 @@ img {
 @import 'components/skip-link';
 @import 'components/syntax-highlighting';
 @import 'components/video-player';
+*/

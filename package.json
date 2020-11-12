@@ -8,14 +8,24 @@
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
     "@tbranyen/jsdom": "^13.0.0",
+    "autoprefixer": "^10.0.2",
+    "bootstrap": "^4.5.3",
     "concurrently": "^4.1.2",
+    "css-loader": "^5.0.1",
+    "exports-loader": "^1.1.1",
     "html-minifier": "^4.0.0",
     "image-size": "^0.8.3",
+    "jquery": "^3.5.1",
     "json-to-scss": "^1.5.0",
+    "node-sass": "^5.0.0",
+    "popper.js": "^1.16.1",
+    "postcss-loader": "^4.0.4",
     "sass": "^1.26.3",
+    "sass-loader": "^10.1.0",
     "semver": "^6.3.0",
     "slugify": "^1.4.0",
-    "stalfos": "github:hankchizljaw/stalfos#c8971d22726326cfc04089b2da4d51eeb1ebb0eb"
+    "stalfos": "github:hankchizljaw/stalfos#c8971d22726326cfc04089b2da4d51eeb1ebb0eb",
+    "style-loader": "^2.0.0"
   },
   "devDependencies": {
     "@erquhart/rollup-plugin-node-builtins": "^2.1.5",
@@ -27,7 +37,8 @@
     "rollup": "^1.32.1",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-json": "^4.0.0",
-    "rollup-plugin-node-resolve": "^5.2.0"
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "webpack": "^5.4.0"
   },
   "scripts": {
     "sass:tokens": "npx json-to-scss src/_data/tokens.json src/scss/_tokens.scss",
