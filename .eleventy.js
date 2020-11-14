@@ -14,6 +14,12 @@ const parseTransform = require('./src/transforms/parse-transform.js');
 // Import data files
 const site = require('./src/_data/site.json');
 
+// Lazy load and LQIP
+const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
+
+// PWA
+const pluginPWA = require("eleventy-plugin-pwa");
+
 module.exports = function(config) {
   // Filters
   config.addFilter('dateFilter', dateFilter);
@@ -22,32 +28,39 @@ module.exports = function(config) {
 
   // Layout aliases
   config.addLayoutAlias('home', 'layouts/home.njk');
+  config.addLayoutAlias('page', 'layouts/page.njk');
+  config.addLayoutAlias('archive', 'layouts/archive.njk');
 
   // Transforms
   config.addTransform('htmlmin', htmlMinTransform);
   config.addTransform('parse', parseTransform);
 
   // Passthrough copy
-  config.addPassthroughCopy('src/assets/fonts');
-  config.addPassthroughCopy('src/assets/images');
-  config.addPassthroughCopy('src/assets/js');
-  config.addPassthroughCopy('src/admin/config.yml');
-  config.addPassthroughCopy('src/admin/previews.js');
+  config.addPassthroughCopy({ 'src/_assets/output': '_assets' });
+  config.addPassthroughCopy({ 'src/_assets/images': '_assets/images' });
+  config.addPassthroughCopy({ 'src/_assets/icons': '_assets/icons' });
+  config.addPassthroughCopy('src/static');
+  config.addPassthroughCopy({ 'src/_views/admin/config.yml': 'admin/config.yml' });
+  config.addPassthroughCopy({ 'src/_views/admin/previews.js': 'admin/previews.js' });
   config.addPassthroughCopy('node_modules/nunjucks/browser/nunjucks-slim.js');
   config.addPassthroughCopy('src/robots.txt');
+  config.addPlugin(lazyImagesPlugin, {
+    imgSelector: '.content img',
+  });
 
   const now = new Date();
 
   // Custom collections
   const livePosts = post => post.date <= now && !post.data.draft;
+
   config.addCollection('posts', collection => {
     return [
-      ...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts)
+      ...collection.getFilteredByGlob('./src/collections/posts/*.md').filter(livePosts)
     ].reverse();
   });
 
   config.addCollection('postFeed', collection => {
-    return [...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts)]
+    return [...collection.getFilteredByGlob('./src/collections/posts/*.md').filter(livePosts)]
       .reverse()
       .slice(0, site.maxPostsPerPage);
   });
@@ -55,6 +68,21 @@ module.exports = function(config) {
   // Plugins
   config.addPlugin(rssPlugin);
   config.addPlugin(syntaxHighlight);
+
+  // PWA
+  if(process.env.ELEVENTY_ENV != "development") {
+    config.addPlugin(pluginPWA, {
+      swDest: "dist/service-worker.js",
+      globDirectory: "./dist",
+      clientsClaim: true,
+      skipWaiting: true,
+      globIgnores: [
+        'index.html',
+        'admin\/**',
+        'thank-you\/**',
+      ]
+    });
+  }
 
   // 404
   config.setBrowserSyncConfig({
@@ -74,7 +102,8 @@ module.exports = function(config) {
   return {
     dir: {
       input: 'src',
-      output: 'dist'
+      output: 'dist',
+      includes: "_views/_includes"
     },
     passthroughFileCopy: true
   };
