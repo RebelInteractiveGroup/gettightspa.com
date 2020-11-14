@@ -1,0 +1,486 @@
+backend:
+  name: git-gateway
+  branch: master
+media_folder: "src/_assets/images"
+public_folder: "/_assets/images"
+collections:
+  - name: "pages"
+    label: "Landing Pages"
+    editor:
+      preview: false
+    folder: "src/collections/landing_pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
+      - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+      - {label: "Permalink Override (Pattern: '/your-slug/')", name: "permalink", widget: "string", required: false}
+      - label: 'Components'
+        name: 'components'
+        widget: 'list'
+        types:
+          - label: 'Content'
+            name: 'content'
+            widget: 'object'
+            fields:
+              - label: 'Container'
+                name: 'container'
+                widget: 'select'
+                options:
+                  - { label: "Contained", value: "container" }
+                  - { label: "Full Width", value: "container-fluid" }
+                default: "container"
+              - { label: 'Text Alignment', name: 'textAlign', widget: 'select', options: ["left", "right", "center"], default: "left"}
+              - { label: 'Body', name: 'body', widget: 'markdown' }
+              - { label: 'Call to Action Link', name: 'link', widget: 'string', required: false }
+              - { label: 'Call to Action Link Text', name: 'linkText', widget: 'string', default: "Learn More", required: false }
+              - { label: 'Call to Action Button Type', name: 'buttonType', widget: 'select', options: ["light", "dark", "primary", "secondary", "info", "success", "warning", "danger"], default: "primary", required: false}
+              - label: 'Call to Action Button Size'
+                name: 'btnSize'
+                widget: 'select'
+                options:
+                  - { label: "Large", value: "lg" }
+                  - { label: "Medium", value: "md" }
+                  - { label: "Small", value: "sm" }
+                default: "md"
+                required: false
+          - label: 'Heading'
+            name: 'heading'
+            widget: 'object'
+            fields:
+              - label: 'Container'
+                name: 'container'
+                widget: 'select'
+                options:
+                  - { label: "Normal", value: "container" }
+                  - { label: "Fluid", value: "container-fluid" }
+                default: "container"
+              - { label: 'Heading Level', name: 'headingLevel', widget: 'select', options: ["1", "2", "3", "4", "5", "6"], default: "2"}
+              - { label: 'Text Alignment', name: 'textAlign', widget: 'select', options: ["left", "right", "center"], default: "left"}
+              - { label: 'Text', name: 'text', widget: 'string' }
+          # - label: 'Hero'
+          #   name: 'hero'
+          #   widget: 'object'
+          #   fields:
+          #     - { label: 'Body', name: 'body', widget: 'markdown' }
+          #     - { label: 'Body Text Color', name: 'textColor', widget: 'select', options: ["light", "dark", "primary", "secondary", "info", "success", "warning", "danger"]}
+          #     - { label: 'Call to Action Link', name: 'link', widget: 'string', required: false }
+          #     - { label: 'Call to Action Link Text', name: 'linkText', widget: 'string', default: "Learn More", required: false }
+          #     - { label: 'Call to Action Button Type', name: 'buttonType', widget: 'select', options: ["light", "dark", "primary", "secondary", "info", "success", "warning", "danger"], default: "primary", required: false}
+          #     - label: 'Call to Action Button Size'
+          #       name: 'btnSize'
+          #       widget: 'select'
+          #       options:
+          #         - { label: "Large", value: "lg" }
+          #         - { label: "Medium", value: "md" }
+          #         - { label: "Small", value: "sm" }
+          #       default: "lg"
+          #       required: false
+          #     - { label: 'Show Contact Form?', name: 'form', widget: 'boolean', default: false }
+          #     - { label: 'Form Text Color', name: 'formTextColor', widget: 'select', options: ["light", "dark", "primary", "secondary", "info", "success", "warning", "danger"]}
+          #     - { label: 'Form Background Color', name: 'formBgColor', widget: 'select', options: ["light", "dark", "primary", "secondary", "info", "success", "warning", "danger"]}
+          #     - { label: 'Form Button Color', name: 'formBtnColor', widget: 'select', options: ["light", "dark", "primary", "secondary", "info", "success", "warning", "danger"]}
+          #     - label: "Layout"
+          #       name: "flexRowOrder"
+          #       widget: "select"
+          #       default: "flex-md-row"
+          #       options:
+          #         - { label: "Normal", value: "flex-md-row" }
+          #         - { label: "Reverse", value: "flex-md-row-reverse" }
+          #     - { label: 'Background Attachment', name: 'backgroundAttachment', widget: 'select', options: ["fixed", "scroll"], default: "scroll"}
+          #     - { label: 'Background Image', name: 'background', widget: 'image' }
+          #     - { label: 'Background Video (HTML)', name: 'video', widget: 'markdown', required: false }
+          # - label: 'Media and Text'
+          #   name: 'media'
+          #   widget: 'object'
+          #   fields:
+          #     - label: 'Container'
+          #       name: 'container'
+          #       widget: 'select'
+          #       options:
+          #         - { label: "Normal", value: "container" }
+          #         - { label: "Fluid", value: "container-fluid" }
+          #       default: "container"
+          #     - { label: 'Body', name: 'body', widget: 'markdown' }
+          #     - { label: 'Image', name: 'image', widget: 'image' }
+          #     - { label: 'Alternative Text', name: 'alt', widget: 'string' }
+          #     - { label: 'Image Position', name: 'imagePosition', widget: 'select', options: ["left", "right"], default: "left"}
+          #     - { label: 'Call to Action Link', name: 'link', widget: 'string', required: false }
+          #     - { label: 'Call to Action Link Text', name: 'linkText', widget: 'string', default: "Learn More", required: false }
+          #     - { label: 'Call to Action Button Type', name: 'buttonType', widget: 'select', options: ["light", "dark", "primary", "secondary", "info", "success", "warning", "danger"], default: "primary", required: false}
+          #     - label: 'Call to Action Button Size'
+          #       name: 'btnSize'
+          #       widget: 'select'
+          #       options:
+          #         - { label: "Large", value: "lg" }
+          #         - { label: "Medium", value: "md" }
+          #         - { label: "Small", value: "sm" }
+          #       default: "md"
+          #       required: false
+          # - label: 'Contact Form'
+          #   name: 'contactform'
+          #   widget: 'object'
+          #   fields:
+          #     - label: 'Container'
+          #       name: 'container'
+          #       widget: 'select'
+          #       options:
+          #         - { label: "Normal", value: "container" }
+          #         - { label: "Fluid", value: "container-fluid" }
+          #       default: "container"
+          #     - { label: 'Form Note', name: 'formNote', widget: 'string', default: "Contact form will appear here." }
+          # - label: 'Separator'
+          #   name: 'separator'
+          #   widget: 'object'
+          #   fields:
+          #     - label: 'Container'
+          #       name: 'container'
+          #       widget: 'select'
+          #       options:
+          #         - { label: "Normal", value: "container" }
+          #         - { label: "Fluid", value: "container-fluid" }
+          #       default: "container"
+          #     - { label: 'Separator Note', name: 'separatorNote', widget: 'string', default: "A horizontal rule separator will appear here." }
+          # - label: 'Callouts'
+          #   name: 'callouts'
+          #   widget: 'object'
+          #   fields:
+          #     - label: 'Container'
+          #       name: 'container'
+          #       widget: 'select'
+          #       options:
+          #         - { label: "Normal", value: "container" }
+          #         - { label: "Fluid", value: "container-fluid" }
+          #       default: "container"
+          #     - label: 'Button Size'
+          #       name: 'btnSize'
+          #       widget: 'select'
+          #       options:
+          #         - { label: "Large", value: "lg" }
+          #         - { label: "Medium", value: "md" }
+          #         - { label: "Small", value: "sm" }
+          #       default: "lg"
+          #     - {label: "Full-Width Buttons?", name: "btnFullWidth", widget: "boolean", default: false}
+          #     - {label: 'Cards per row', name: 'rowCols', widget: 'number', max: 12, min: 1, default: 3}
+          #     - label: 'Cards'
+          #       name: 'cards'
+          #       widget: 'list'
+          #       fields:
+          #         - { label: 'Title', name: 'title', widget: 'string' }
+          #         - { label: 'Image', name: 'image', widget: 'image' }
+          #         - { label: 'Alternative Text', name: 'alt', widget: 'string' }
+          #         - { label: 'Body', name: 'body', widget: 'markdown' }
+          #         - { label: 'Link', name: 'link', widget: 'string', required: false }
+          #         - { label: 'Link Text', name: 'linkText', widget: 'string', required: false }
+          #         - { label: 'Button Type', name: 'buttonType', widget: 'select', options: ["light", "dark", "primary", "secondary", "info", "success", "warning", "danger"], default: "primary"}
+          # - label: 'Accordion'
+          #   name: 'accordion'
+          #   widget: 'object'
+          #   fields:
+          #     - label: 'Container'
+          #       name: 'container'
+          #       widget: 'select'
+          #       options:
+          #         - { label: "Normal", value: "container" }
+          #         - { label: "Fluid", value: "container-fluid" }
+          #       default: "container"
+          #     - label: 'Accordion Items'
+          #       name: 'accordionItems'
+          #       widget: 'list'
+          #       fields:
+          #         - { label: 'Header', name: 'header', widget: 'string' }
+          #         - { label: 'Body', name: 'body', widget: 'markdown' }
+          # - label: 'Carousel'
+          #   name: 'carousel'
+          #   widget: 'object'
+          #   fields:
+          #     - label: 'Container'
+          #       name: 'container'
+          #       widget: 'select'
+          #       options:
+          #         - { label: "Normal", value: "container" }
+          #         - { label: "Fluid", value: "container-fluid" }
+          #       default: "container"
+          #     - {label: "Show Indicators", name: "showIndicators", widget: "boolean", default: true}
+          #     - {label: "Show Navigation", name: "showNavigation", widget: "boolean", default: true}
+          #     - label: 'Images'
+          #       name: 'images'
+          #       widget: 'list'
+          #       fields:
+          #         - { label: 'Image', name: 'image', widget: 'image' }
+          #         - { label: 'Alternative Text', name: 'alt', widget: 'string' }
+          # - label: 'Gallery'
+          #   name: 'gallery'
+          #   widget: 'object'
+          #   fields:
+          #     - label: 'Container'
+          #       name: 'container'
+          #       widget: 'select'
+          #       options:
+          #         - { label: "Normal", value: "container" }
+          #         - { label: "Fluid", value: "container-fluid" }
+          #       default: "container"
+          #     - label: 'Images'
+          #       name: 'images'
+          #       widget: 'list'
+          #       fields:
+          #         - { label: 'Image', name: 'image', widget: 'image' }
+          #         - { label: 'Alternative Text', name: 'alt', widget: 'string' }
+          # - label: 'Testimonials'
+          #   name: 'testimonials'
+          #   widget: 'object'
+          #   fields:
+          #     - label: 'Container'
+          #       name: 'container'
+          #       widget: 'select'
+          #       options:
+          #         - { label: "Normal", value: "container" }
+          #         - { label: "Fluid", value: "container-fluid" }
+          #       default: "container"
+          #     - {label: "Title", name: "title", widget: "string"}
+          #     - { label: 'Heading Level', name: 'headingLevel', widget: 'select', options: ["1", "2", "3", "4", "5", "6"], default: "2"}
+          #     - { label: 'Text Color', name: 'textColor', widget: 'select', options: ["light", "dark", "primary", "secondary", "info", "success", "warning", "danger"]}
+          #     - { label: 'Background Color', name: 'backgroundColor', widget: 'select', options: ["light", "dark", "primary", "secondary", "info", "success", "warning", "danger"]}
+          #     - {label: "Show Indicators", name: "showIndicators", widget: "boolean", default: true}
+          #     - {label: "Show Navigation", name: "showNavigation", widget: "boolean", default: true}
+          #     - label: 'Quotes'
+          #       name: 'quotes'
+          #       widget: 'list'
+          #       fields:
+          #       - { label: 'Quotation', name: 'quotation', widget: 'text' }
+          #       - { label: 'Citation', name: 'citation', widget: 'string' }
+          # - label: 'Spotlight'
+          #   name: 'spotlight'
+          #   widget: 'object'
+          #   fields:
+          #     - label: 'Container'
+          #       name: 'container'
+          #       widget: 'select'
+          #       options:
+          #         - { label: "Normal", value: "container" }
+          #         - { label: "Fluid", value: "container-fluid" }
+          #       default: "container"
+          #     - { label: 'Body', name: 'body', widget: 'markdown' }
+          #     - { label: 'Text Color', name: 'textColor', widget: 'select', options: ["light", "dark", "primary", "secondary", "info", "success", "warning", "danger"]}
+          #     - { label: 'Text Alignment', name: 'textAlign', widget: 'select', options: ["left", "right", "center"], default: "left"}
+          #     - { label: 'Background Attachment', name: 'backgroundAttachment', widget: 'select', options: ["fixed", "scroll"], default: "scroll"}
+          #     - { label: 'Background Image', name: 'background', widget: 'image' }
+          #     - { label: 'Call to Action Link', name: 'link', widget: 'string', required: false }
+          #     - { label: 'Call to Action Link Text', name: 'linkText', widget: 'string', default: "Learn More", required: false }
+          #     - { label: 'Call to Action Button Type', name: 'buttonType', widget: 'select', options: ["light", "dark", "primary", "secondary", "info", "success", "warning", "danger"], default: "primary", required: false}
+          #     - label: 'Call to Action Button Size'
+          #       name: 'btnSize'
+          #       widget: 'select'
+          #       options:
+          #         - { label: "Large", value: "lg" }
+          #         - { label: "Medium", value: "md" }
+          #         - { label: "Small", value: "sm" }
+          #       default: "md"
+          #       required: false
+          # - label: 'Alert'
+          #   name: 'alert'
+          #   widget: 'object'
+          #   fields:
+          #     - label: 'Container'
+          #       name: 'container'
+          #       widget: 'select'
+          #       options:
+          #         - { label: "Normal", value: "container" }
+          #         - { label: "Fluid", value: "container-fluid" }
+          #       default: "container"
+          #     - { label: 'Alert Type', name: 'alertType', widget: 'select', options: ["primary", "secondary", "success", "info", "warning", "danger", "light", "dark"]}
+          #     - { label: 'Text Alignment', name: 'textAlign', widget: 'select', options: ["left", "right", "center"], default: "left"}
+          #     - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: "generic_pages"
+    label: "Pages"
+    editor:
+      preview: false
+    folder: "src/collections/pages"
+    slug: "{{slug}}"
+    preview_path: "pages/{{slug}}"
+    create: true
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Permalink Override (Pattern: '/your-slug/')", name: "permalink", widget: "string", required: false}
+      - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
+      - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+      - {label: "Social Image", name: "socialImage", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  # - name: "posts"
+  #   label: "Posts"
+  #   folder: "src/collections/posts"
+  #   slug: "{{slug}}"
+  #   preview_path: "posts/{{slug}}"
+  #   create: true
+  #   fields:
+  #     - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk"}
+  #     - {label: "Title", name: "title", widget: "string"}
+  #     - {label: "Permalink", name: "permalink", widget: "hidden", default: "posts/{{ page.fileSlug }}/"}
+  #     - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
+  #     - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+  #     - {label: "Social Image", name: "socialImage", widget: "image", required: false}
+  #     - {label: "Publish Date", name: "date", widget: "datetime"}
+  #     - {label: "Tags", name: "tags", widget: "list", allow_add: true}
+  #     - {label: "Body", name: "body", widget: "markdown"}
+  - label: "Globals"
+    name: "globals"
+    editor:
+      preview: false
+    files:
+      - label: "Site Data"
+        name: "site_data"
+        delete: false
+        file: "src/_data/site.json"
+        fields:
+          - {label: "Site Name", name: "name", widget: "string"}
+          - {label: "Short Name", name: "shortName", widget: "string"}
+          - {label: "Site Url", name: "url", widget: "string"}
+          - {label: "Maximum Posts Per Page", name: "maxPostsPerPage", widget: "number", default: 5}
+          - {label: "Show Theme Credit", name: "showThemeCredit", widget: "boolean", default: true}
+          - {label: "Favicon", name: "favicon", widget: "image"}
+          - {label: "Logo", name: "logo", widget: "image", default: "/_assets/images/logo.svg" }
+          - {label: "Phone Number", name: "phoneNumber", widget: "string" }
+          - {label: "Sidebar Title", name: "sidebarTitle", widget: "string" }
+          - {label: "Form HTML", name: "formHtml", widget: "text" }
+      - label: "Navigation"
+        name: "nav"
+        delete: false
+        file: "src/_data/navigation.json"
+        fields:
+          - {label: "Justify Navbar Contents", name: "justify-navbar-contents", widget: "select", options: ["start", "center", "end", "between", "around"], default: "start"}
+          - {label: "Navbar Color Scheme", name: "navbar-color-scheme", widget: "select", options: ["light", "dark"], default: "light"}
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Text", name: "text", widget: "string"}
+              - {label: "Url", name: "url", widget: "string"}
+              - {label: "Is url to external site?", name: "external", widget: "boolean", required: false}
+              - label: "Sub-Menu Items"
+                name: "submenuitems"
+                widget: "list"
+                fields:
+                  - {label: "Text", name: "text", widget: "string", required: true}
+                  - {label: "Url", name: "url", widget: "string"}
+                  - {label: "Is url to external site?", name: "external", widget: "boolean", required: false}
+      - label: "Footer"
+        name: "footernav"
+        delete: false
+        file: "src/_data/footernavigation.json"
+        fields:
+          - { label: 'Text Alignment', name: 'textAlign', widget: 'select', options: ["left", "right", "center"], default: "left"}
+          - {label: "Footer Content", name: "footerContent", widget: "markdown" }
+          - {label: "Justify Footer Nav Contents", name: "justify-footernav-contents", widget: "select", options: ["start", "center", "end", "between", "around"], default: "start"}
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Text", name: "text", widget: "string"}
+              - {label: "Url", name: "url", widget: "string"}
+              - {label: "Is url to external site?", name: "external", widget: "boolean", required: false}
+      - label: "Social Media"
+        name: "socialmedia"
+        delete: false
+        file: "src/_data/socialmedia.json"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Text", name: "text", widget: "string"}
+              - {label: "Url", name: "url", widget: "string"}
+              - {label: "icon", name: "icon", widget: "image"}
+      - label: "Theme Structure and Design"
+        name: "design"
+        delete: false
+        file: "src/_data/design.json"
+        fields:
+          - label: "Header and Footer"
+            name: "theme-structure"
+            widget: "object"
+            fields:
+            - label: 'Navigation Design'
+              name: 'navigation'
+              widget: 'select'
+              options:
+              - { label: "Navigation 1", value: "navigation-1" }
+              - { label: "Navigation 2", value: "navigation-2" }
+              default: "navigation-1"
+            - label: 'Footer Design'
+              name: 'footer'
+              widget: 'select'
+              options:
+              - { label: "Footer 1", value: "footer-1" }
+              - { label: "Footer 2", value: "footer-2" }
+              default: "footer-1"
+      - label: "Style Settings"
+        name: "theme"
+        delete: false
+        file: "src/_data/tokens.json"
+        fields:
+          - label: "Global Style Settings"
+            name: "global-settings"
+            widget: "object"
+            fields:
+              - {label: "Enable Rounded", name: "enable-rounded", widget: "boolean", default: true}
+              - {label: "Enable Shadows", name: "enable-shadows", widget: "boolean", default: false}
+              - {label: "Enable Gradients", name: "enable-gradients", widget: "boolean", default: false}
+              - {label: "Enable Responsive Font Sizes", name: "enable-responsive-font-sizes", widget: "boolean", default: false}
+          - label: "Sizing and Spacing"
+            name: "spacing"
+            widget: "object"
+            fields:
+            - {label: "Logo Height", name: "logo-height", widget: "number", valueType: "float", default: 4, hint: "Height of the header logo in rems"}
+            - {label: "Content Columns", name: "content-cols", widget: "number", valueType: "float", default: 7, max: 12, min: 1, hint: "Number of columns (out of 12) for the content column to occupy"}
+            - {label: "Sidebar Columns", name: "sidebar-cols", widget: "number", valueType: "float", default: 5, max: 12, min: 1, hint: "Number of columns (out of 12) for the sidebar column to occupy"}
+            - {label: "Section Margins", name: "section-margins", widget: "number", valueType: "float", default: 2, hint: "Margins outside sections in rems"}
+            - {label: "Section Padding", name: "section-padding", widget: "number", valueType: "float", default: 2, hint: "Padding inside sections in rems"}
+            - {label: "Sidebar Padding", name: "sidebar-padding", widget: "number", valueType: "float", default: 2, hint: "Padding inside sidebar in rems"}
+          - label: "Colors"
+            name: "colors"
+            widget: "object"
+            fields:
+              - label: "Theme Colors"
+                name: "themeColors"
+                widget: "object"
+                fields:
+                  - {label: "Primary", name: "primary", widget: "string", default: "hsl(208, 57%, 21%)"}
+                  - {label: "Secondary", name: "secondary", widget: "string", default: "#6c757d"}
+                  - {label: "Success", name: "success", widget: "string", default: "#28a745"}
+                  - {label: "Info", name: "info", widget: "string", default: "#17a2b8"}
+                  - {label: "Warning", name: "warning", widget: "string", default: "#ffc107"}
+                  - {label: "Danger", name: "danger", widget: "string", default: "#dc3545"}
+                  - {label: "Light", name: "light", widget: "string", default: "f8f9fa"}
+                  - {label: "Dark", name: "dark", widget: "string", default: "343a40"}
+              - label: "Header Colors"
+                name: "headerColors"
+                widget: "object"
+                fields:
+                  - {label: "Header Background Color", name: "header-bg", widget: "string", default: "#ffffff"}
+                  - {label: "Navbar Background Color", name: "navbar-bg", widget: "string", default: "#f8f9fa"}
+              - label: "Body Colors"
+                name: "bodyColors"
+                widget: "object"
+                fields:
+                  - {label: "Body Background Color", name: "bodyBg", widget: "string", default: "#fff"}
+                  - {label: "Body Text Color", name: "body-color", widget: "string", default: "#212529"}
+                  - {label: "Sidebar Background Color", name: "sidebar-bg", widget: "string", default: "#f8f9fa"}
+                  - {label: "Sidebar Text Color", name: "sidebar-color", widget: "string", default: "#404040"}
+                  - {label: "Headings Color", name: "headings-color", widget: "string", default: "#404040"}
+                  - {label: "Footer Background Color", name: "footer-bg", widget: "string", default: "#f8f9fa"}
+                  - {label: "Footer Text Color", name: "footer-color", widget: "string", default: "#404040"}
+          - label: "Fonts"
+            name: "fonts"
+            widget: "object"
+            fields:
+              - {label: "Base Font Name", name: "baseFontName", widget: "string", default: "Open Sans", hint: "Google font name" }
+              - {label: "Headings Font Name", name: "headingsFontName", widget: "string", default: "Recursive", hint: "Google font name" }
+              - {label: "h1 Font Size", name: "h1-font-size", widget: "number", valueType: "float", default: 2.5, hint: "Heading 1 size in rems"}
+              - {label: "h2 Font Size", name: "h2-font-size", widget: "number", valueType: "float", default: 2, hint: "Heading 2 size in rems"}
+              - {label: "h3 Font Size", name: "h3-font-size", widget: "number", valueType: "float", default: 1.75, hint: "Heading 3 size in rems"}
+              - {label: "h4 Font Size", name: "h4-font-size", widget: "number", valueType: "float", default: 1.5, hint: "Heading 4 size in rems"}
+              - {label: "h5 Font Size", name: "h5-font-size", widget: "number", valueType: "float", default: 1.25, hint: "Heading 5 size in rems"}
+              - {label: "h6 Font Size", name: "h6-font-size", widget: "number", valueType: "float", default: 1, hint: "Heading 6 size in rems"}

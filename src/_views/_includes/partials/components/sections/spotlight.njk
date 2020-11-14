@@ -1,0 +1,8 @@
+<section class="section section-spotlight text-{{ item.textColor }} text-{{ item.textAlign }} background-{{ item.backgroundAttachment }}" style="background-image: url({{ item.background }})">
+  <div class="{{ item.container }}">
+    <article>
+      {{ item.body | markdownFilter | safe }}
+      {% include "partials/components/call-to-action.njk" %}
+    </article>
+  </div>
+</section>

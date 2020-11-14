@@ -1,0 +1,13 @@
+.section-callouts {
+  .card-img-top {
+    @extend .img-fluid;
+  }
+
+  .card {
+    @extend .h-100;
+  }
+
+  .card-footer {
+    @extend .text-center;
+  }
+}

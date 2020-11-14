@@ -1,0 +1,7 @@
+<section class="section section-alert text-{{ item.textAlign }}">
+  <div class="{{ item.container }}">
+    <div class="alert alert-{{ item.alertType }}" role="alert">
+      {{ item.body | markdownFilter | safe }}
+    </div>
+  </div>
+</section>

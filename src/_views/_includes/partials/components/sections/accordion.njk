@@ -1,0 +1,23 @@
+{% set carouselIndex = loop.index %}
+<div class="section section-accordion">
+  <div class="{{ item.container }}">
+    <div class="accordion" id="accordion{{ carouselIndex }}">
+    {% for card in item.accordionItems %}
+      <div class="card">
+        <div class="card-header" id="heading-{{ carouselIndex }}-{{ loop.index }}">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse-{{ carouselIndex }}-{{ loop.index }}" aria-expanded="true" aria-controls="collapse-{{ carouselIndex }}-{{ loop.index }}">
+              {{ card.header }}
+            </button>
+          </h2>
+        </div>
+        <div id="collapse-{{ carouselIndex }}-{{ loop.index }}" class="collapse" aria-labelledby="heading-{{ carouselIndex }}-{{ loop.index }}" data-parent="#accordion{{ carouselIndex }}">
+          <div class="card-body">
+            {{ card.body | markdownFilter | safe }}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+</div>

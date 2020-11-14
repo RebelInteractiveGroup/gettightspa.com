@@ -1,0 +1,22 @@
+<section class="section section-hero text-{{ item.textColor }} text-{{ item.textAlign }}">
+  <div class="{{ item.container }}">
+    <div class="hero-bg embed-responsive background-{{ item.backgroundAttachment }}" style="background-image: url({{ item.background }})">
+      {% if item.video %}
+        <video autoplay muted loop id="heroVideo">
+          <source src="/images/hero.mp4" type="video/mp4">
+        </video>
+      {% endif %}
+    </div>
+    <div class="row {{ item.flexRowOrder }} align-items-center">
+      <article class="hero-article col-md-6">
+        {{ item.body | markdownFilter | safe }}
+        {% include "partials/components/call-to-action.njk" %}
+      </article>
+      {% if item.form %}
+      <aside class="hero-sidebar col-md-6 text-{{ item.formTextColor }} bg-{{ item.formBgColor }} buttons-{{ item.formBtnColor }}">
+        {{ site.formHtml | safe }}
+      </aside>
+        {% endif %}
+    </div>
+  </div>
+</section>

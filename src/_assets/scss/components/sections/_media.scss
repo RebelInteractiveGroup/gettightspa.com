@@ -1,0 +1,11 @@
+.section-media {
+  img {
+    &.media-left {
+      margin-right: $section-padding;
+    }
+
+    &.media-right {
+      margin-left: $section-padding;
+    }
+  }
+}

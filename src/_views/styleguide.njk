@@ -1,0 +1,282 @@
+---
+title: 'Styleguide'
+permalink: /styleguide/
+eleventyExcludeFromCollections: true
+---
+
+{% extends 'layouts/base.njk' %}
+
+{% block head %}
+  <style>
+    .swatches {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
+      grid-gap: 2.5rem 2rem;
+      margin-left: 0;
+    }
+
+    .swatches > * {
+      margin-top: 0 !important;
+    }
+
+    .props dt {
+      font-weight: 600;
+    }
+
+    .props dd + dt {
+      margin-top: 0.5rem;
+      display: block;
+    }
+
+    #main-content .list-unstyled > li {
+      border-bottom: 1px solid lightgray;
+      margin-bottom: 5rem;
+    }
+
+    #main-content ul.swatches li {
+      margin-bottom: 0;
+    }
+
+    #main-content ul.list-unstyled {
+      margin-bottom: 5rem;
+    }
+
+  </style>
+{% endblock %}
+{% block content %}
+  <main id="main-content" tabindex="-1">
+    <article class="container">
+
+        <h2 class="display-4">Logo</h2>
+        <ul class="list-unstyled">
+          <li class="list-item">
+            <figure>
+              <img src="{{ site.logo }}" alt="{{ site.name }} logo">
+            </figure>
+            <dl class="props">
+              <dt>Value</dt>
+              <dd><code>{{ site.logo }}</code></dd>
+            </dl>
+          </li>
+        </ul>
+
+        <h2 class="display-4">Navbar</h2>
+        {% include "partials/components/navigation/" + design.navigation + ".njk" %}
+        <ul class="list-unstyled">
+          <li class="list-item">
+              <h3>justify-navbar-contents</h3>
+            <dl class="props">
+              <dt>Value</dt>
+              <dd><code>{{ navigation['justify-navbar-contents'] }}</code></dd>
+            </dl>
+          </li>
+         <li class="list-item">
+            <h3>navbar-color-scheme</h3>
+            <dl class="props">
+              <dt>Value</dt>
+              <dd><code>{{ navigation['navbar-color-scheme'] }}</code></dd>
+            </dl>
+          </li>
+        </ul>
+
+        <h2 class="display-4">Footer</h2>
+        {% include "partials/global/site-foot.njk" %}
+        <ul class="list-unstyled">
+          <li class="list-item">
+            <h3>textAlign</h3>
+            <dl class="props">
+              <dt>Value</dt>
+              <dd><code>{{ footernavigation['textAlign'] }}</code></dd>
+            </dl>
+          </li>
+          <li class="list-item">
+            <h3>justify-footernav-contents</h3>
+            <dl class="props">
+              <dt>Value</dt>
+              <dd><code>{{ footernavigation['justify-footernav-contents'] }}</code></dd>
+            </dl>
+          </li>
+        </ul>
+
+        <h2 class="display-4">Theme Colors</h2>
+        <p class="visually-hidden">Colour swatches with various values that you can copy.</p>
+        <ul class="list-unstyled swatches">
+          {% for color in styleguide.themecolors() %}
+            <li class="list-item sf-flow">
+              <div class="border p-5" style="background: {{ color.value }}"></div>
+              <h3>{{ color.key }}</h3>
+              <dl class="props">
+                <dt>Value</dt>
+                <dd><code>{{ color.value }}</code></dd>
+              </dl>
+            </li>
+          {% endfor %}
+        </ul>
+
+        <h2 class="display-4">Body Colors</h2>
+        <p class="visually-hidden">Colour swatches with various values that you can copy.</p>
+        <ul class="list-unstyled swatches">
+          {% for color in styleguide.bodycolors() %}
+            <li class="list-item sf-flow">
+              <div class="border p-5" style="background: {{ color.value }}"></div>
+              <h3>{{ color.key }}</h3>
+              <dl class="props">
+                <dt>Value</dt>
+                <dd><code>{{ color.value }}</code></dd>
+              </dl>
+            </li>
+          {% endfor %}
+        </ul>
+
+        <h2 class="display-4">Header Colors</h2>
+        <p class="visually-hidden">Colour swatches with various values that you can copy.</p>
+        <ul class="list-unstyled swatches">
+          {% for color in styleguide.headercolors() %}
+            <li class="list-item sf-flow">
+              <div class="border p-5" style="background: {{ color.value }}"></div>
+              <h3>{{ color.key }}</h3>
+              <dl class="props">
+                <dt>Value</dt>
+                <dd><code>{{ color.value }}</code></dd>
+              </dl>
+            </li>
+          {% endfor %}
+        </ul>
+
+        <h2>Global Settings</h2>
+        <ul class="list-unstyled">
+          <li class="list-item sf-flow">
+            <div class="bg-dark text-light p-5 rounded">
+              {% if tokens['global-settings']['enable-rounded'] %}
+                Elements will have rounded corners
+              {% else %}
+                Elements will have square corners
+              {% endif %}
+            </div>
+            <h3>enable-rounded</h3>
+            <dl class="props">
+              <dt>Value</dt>
+              <dd><code>{{ tokens['global-settings']['enable-rounded'] }}</code></dd>
+            </dl>
+          </li>
+          <li class="list-item sf-flow">
+            <button class="btn btn-primary">
+              {% if tokens['global-settings']['enable-shadows'] %}
+                Buttons have shadows
+              {% else %}
+                Buttons do not have shadows
+              {% endif %}
+            </button>
+            <h3>enable-shadows</h3>
+            <dl class="props">
+              <dt>Value</dt>
+              <dd><code>{{ tokens['global-settings']['enable-shadows'] }}</code></dd>
+            </dl>
+          </li>
+          <li class="list-item sf-flow">
+            <button class="btn btn-primary">
+              {% if tokens['global-settings']['enable-gradients'] %}
+                Buttons have gradients
+              {% else %}
+                Buttons do not have gradients
+              {% endif %}
+            </button>
+            <h3>enable-gradients</h3>
+            <dl class="props">
+              <dt>Value</dt>
+              <dd><code>{{ tokens['global-settings']['enable-gradients'] }}</code></dd>
+            </dl>
+          </li>
+          <li class="list-item sf-flow">
+            <h3>enable-responsive-font-sizes</h3>
+            <dl class="props">
+              <dt>Value</dt>
+              <dd><code>{{ tokens['global-settings']['enable-responsive-font-sizes'] }}</code></dd>
+            </dl>
+          </li>
+        </ul>
+
+        <h2>Fonts</h2>
+        <ul class="list-unstyled">
+          <li class="list-item sf-flow">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat elit vel venenatis mattis. Maecenas rhoncus id orci porta lobortis. Vivamus efficitur erat a eros vestibulum aliquet.</p>
+            <h3>Body Font</h3>
+            <dl class="props">
+              <dt>Value</dt>
+              <dd><code>{{ tokens['fonts']['base'] }}</code></dd>
+            </dl>
+          </li>
+          <li class="list-item sf-flow">
+            <h1>Lorem Ipsum Dolor</h1>
+            <h3>Headings Font</h3>
+            <dl class="props">
+              <dt>Value</dt>
+              <dd><code>{{ tokens['fonts']['headings-font-family'] }}</code></dd>
+            </dl>
+          </li>
+          <li class="list-item sf-flow">
+            <h1>Heading 1</h1>
+            <h3>heading-1-font-size</h3>
+            <dl class="props">
+              <dt>Value</dt>
+              <dd><code>{{ tokens['fonts']['h1-font-size'] }}rem</code></dd>
+            </dl>
+          </li>
+          <li class="list-item sf-flow">
+            <h2>Heading 2</h2>
+            <h3>heading-2-font-size</h3>
+            <dl class="props">
+              <dt>Value</dt>
+              <dd><code>{{ tokens['fonts']['h2-font-size'] }}rem</code></dd>
+            </dl>
+          </li>
+          <li class="list-item sf-flow">
+            <h3>Heading 3</h3>
+            <h3>heading-3-font-size</h3>
+            <dl class="props">
+              <dt>Value</dt>
+              <dd><code>{{ tokens['fonts']['h3-font-size'] }}rem</code></dd>
+            </dl>
+          </li>
+          <li class="list-item sf-flow">
+            <h4>Heading 4</h4>
+            <h3>heading-4-font-size</h3>
+            <dl class="props">
+              <dt>Value</dt>
+              <dd><code>{{ tokens['fonts']['h4-font-size'] }}rem</code></dd>
+            </dl>
+          </li>
+          <li class="list-item sf-flow">
+            <h5>Heading 5</h5>
+            <h3>heading-5-font-size</h3>
+            <dl class="props">
+              <dt>Value</dt>
+              <dd><code>{{ tokens['fonts']['h5-font-size'] }}rem</code></dd>
+            </dl>
+          </li>
+          <li class="list-item sf-flow">
+            <h6>Heading 6</h6>
+            <h3>heading-6-font-size</h3>
+            <dl class="props">
+              <dt>Value</dt>
+              <dd><code>{{ tokens['fonts']['h6-font-size'] }}rem</code></dd>
+            </dl>
+          </li>
+        </ul>
+
+        <h2>Spacing</h2>
+        <ul class="list-unstyled">
+          {% for spacing in styleguide.spacing() %}
+            <li class="list-item sf-flow">
+              <h3>{{ spacing.key }}</h3>
+              <dl class="props">
+                <dt>Value</dt>
+                <dd><code>{{ spacing.value }}rem</code></dd>
+              </dl>
+            </li>
+          {% endfor %}
+        </ul>
+
+    </article>
+  </main>
+{% endblock %}

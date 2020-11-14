@@ -1,0 +1,11 @@
+.section-carousel {
+  @extend .my-0, .py-0;
+
+  & > .container-fluid {
+    @extend .px-0
+  }
+
+  .carousel-item img {
+    @extend .img-fluid;
+  }
+}

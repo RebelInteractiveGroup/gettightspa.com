@@ -1,0 +1,17 @@
+{% if item.imagePosition == 'right' %}
+   {% set order = "2" %}
+{% endif %}
+
+<section class="section section-media">
+  <div class="{{ item.container }}">
+    <div class="row media-row">
+      <figure class="col-md-4 order-md-{{ order }}">
+        <img src="{{ item.image }}" class="img-fluid" alt="{{ item.alt }}">
+      </figure>
+      <article class="col-md-8">
+        {{ item.body | markdownFilter | safe }}
+        {% include "partials/components/call-to-action.njk" %}
+      </article>
+    </div>
+  </div>
+</section>

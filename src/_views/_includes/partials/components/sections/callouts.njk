@@ -1,0 +1,24 @@
+{% if item.btnFullWidth %}
+  {% set btnFullWidth = 'btn-block' %}
+{% endif %}
+
+<section class="section section-callouts">
+  <div class="{{ item.container }}">
+    <div class="cards-row row row-cols-1 row-cols-md-{{ item.rowCols }}">
+    {% for card in item.cards %}
+      <article class="col">
+        <div class="card">
+          <img src="{{ card.image }}" class="card-img-top" alt="{{ card.alt }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ card.title }}</h5>
+            {{ card.body | markdownFilter | safe }}
+          </div>
+          <div class="card-footer">
+            <a href="{{ card.link }}" class="btn btn-{{ card.buttonType }} btn-{{ item.btnSize }} {{ btnFullWidth }}">Learn More</a>
+          </div>
+        </div>
+      </article>
+    {% endfor %}
+    </div>
+  </div>
+</section>

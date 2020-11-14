@@ -1,0 +1,17 @@
+.section-testimonials {
+  @extend .text-center;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: inherit;
+  }
+
+  .carousel-inner {
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+  }
+}

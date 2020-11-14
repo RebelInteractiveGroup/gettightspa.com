@@ -1,0 +1,21 @@
+.section-spotlight {
+  @extend .full-width;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .container,
+  .container-fluid {
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: unset;
+  }
+}
