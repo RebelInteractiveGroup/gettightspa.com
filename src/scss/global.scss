@@ -92,10 +92,10 @@ img {
 @import 'utilities/visually-hidden';
 @import 'utilities/wrapper';
 
-// Components
 @import 'components/button';
 @import 'components/form';
 @import 'components/heading-permalink';
+
 @import 'components/intro';
 @import 'components/nav';
 @import 'components/pagination';
@@ -107,3 +107,7 @@ img {
 @import 'components/syntax-highlighting';
 @import 'components/video-player';
 */
+
+// Components
+
+@import 'components/hero';

@@ -17892,9 +17892,9 @@
 	unwrapExports(bootstrap);
 
 	jQuery(document).ready(function($) {
-	  alert("here we are woo");
+	  //alert("here we are woo");
 	  $('h1').on('click', function() {
-	    alert("here we are woo AGAIN");
+	    
 	  });
 	  
 

@@ -1,22 +1,37 @@
 {% if navigation.items %}
-  <nav class="nav" aria-label="{{ariaLabel}}">
-    <ul class="[ nav__list ] [ box-flex align-center md:space-before ]">
-      {% for item in navigation.items %}
-        {% set relAttribute = '' %}
-        {% set currentAttribute = '' %}
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" aria-label="{{ariaLabel}}">
+    <div class="container">
+      <a class="navbar-brand" href="#">{{ site.name }}</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          {% for item in navigation.items %}
+            {% set relAttribute = '' %}
+            {% set currentAttribute = '' %}
+            {% set activeAttribute = '' %}
 
-        {% if item.rel %}
-          {% set relAttribute = ' rel="' + item.rel + '"' %}
-        {% endif %}
+            {% if item.rel %}
+              {% set relAttribute = ' rel="' + item.rel + '"' %}
+            {% endif %}
 
-        {% if page.url == item.url %}
-          {% set currentAttribute = ' aria-current="page"' %}
-        {% endif %}
+            {% if page.url == item.url %}
+              {% set currentAttribute = ' aria-current="page"' %}
+              {% set activeAttribute = ' active' %}
+            {% endif %}
 
-        <li class="nav__item">
-          <a href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}>{{ item.text }}</a>
-        </li>
-      {% endfor %}
-    </ul>
+            <li class="nav-item {{ activeAttribute | safe }}">
+              <a class="nav-link" {{ relAttribute | safe }}{{ currentAttribute | safe }} href="{{ item.url }}">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
   </nav>
 {% endif %}
