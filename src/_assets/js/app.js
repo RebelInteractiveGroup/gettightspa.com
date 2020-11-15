@@ -17,12 +17,9 @@ import 'bootstrap/js/dist/dropdown';
 $(function(){
     $(document).ready(function() {
         var shrinkTrigger = parseInt($("#main-header").height() * 0.5);
-        console.log(shrinkTrigger);
+
         $(window).scroll(function(){
-            console.log("working?");
             if($(this).scrollTop()>=shrinkTrigger){
-                // instead of alert you can use to show your ad
-                // something like $('#footAd').slideup();
                 $("#main-header").find(".navbar, .navbar-brand").addClass("shrink");
             }
             else {
