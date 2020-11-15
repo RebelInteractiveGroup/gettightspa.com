@@ -4,6 +4,9 @@
     <img class="socialmedia-icon" src="{{ item.icon }}" alt="{{ item.text }}">
     {% endif %}
     <span class="item-wrap">{{ item.text }}</span>
+    {%if item.supportingText %}
+    <span class="item-wrap">{{ item.supportingText }}</span>
+    {% endif %}
   </a>
   {% if hasSubmenu %}
     <div class="dropdown-menu">

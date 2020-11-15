@@ -1,0 +1,47 @@
+{% set carouselIndex = loop.index %}
+
+<section class="section section-content-carousel text-{{ item.textAlign }}">
+  <div class="{{ item.container }}">
+    {{ item.body | markdownFilter | safe }}
+    
+    <div id="carousel{{ carouselIndex }}" class="carousel slide" data-ride="carousel">
+      {% if item.showIndicators %}
+      <ol class="carousel-indicators">
+        {% for slide in item.slides %}
+          <li data-target="#carousel{{ carouselIndex }}" data-slide-to="{{ loop.index0 }}" class="{% if loop.first == true %} active {% endif %}"></li>
+        {% endfor %}
+      </ol>
+      {% endif %}
+      <div class="carousel-inner">
+        {% for image in item.slides %}
+        <div class="carousel-item {% if loop.first == true %} active {% endif %}">
+            {{ image.text | markdownFilter | safe }}
+    
+            <div class='row justify-content-center'>
+                
+                <div class='col-4'>
+                    <img src="{{ image.beforeImage }}" class="d-block w-100" alt="{{ site.name }} {{ beforeImage.alt }}">
+                    <p>{{ beforeImage.alt }}</p>
+                </div>
+                <div class='col-4'>
+                    <img src="{{ image.afterImage }}" class="d-block w-100" alt="{{ site.name }} {{ afterImage.alt }}">
+                    <p>{{ afterImage.alt }}</p>
+                </div>
+            </div>
+                
+        </div>
+        {% endfor %}
+      </div>
+      {% if item.showNavigation %}
+      <a class="carousel-control-prev" href="#carousel{{ carouselIndex }}" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel{{ carouselIndex }}" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      {% endif %}
+    </div>
+  </div>
+</section>

@@ -1,8 +1,9 @@
 <a class="sr-only" href="#main-content">Skip to content</a>
-<header class="banner" role="banner">
+<header class="banner" role="banner" id="main-header">
   <div class="wrapper">
     {% set ariaLabel = 'navigation' %}
     {% include "partials/components/navigation/" + design.navigation + ".njk" %}
     </div>
   </div>
 </header>
+<img class="logo header-shim" src="{{ site.logo }}" alt="{{ site.name }} logo">

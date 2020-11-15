@@ -1,0 +1,17 @@
+.section-content-carousel {
+  @extend .my-0, .py-0;
+  background: linear-gradient(180deg, #9FD672 0%, #315A0F 100%);
+
+  & > .container-fluid {
+    @extend .px-0;
+  }
+
+  & > .container {
+    @extend .bg-white, .px-4, .py-5;
+  }
+  
+
+  .carousel-item img {
+    @extend .img-fluid;
+  }
+}

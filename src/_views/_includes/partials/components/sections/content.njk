@@ -1,8 +1,8 @@
 <section class="section section-content text-{{ item.textAlign }}">
   <div class="{{ item.container }}">
-    <article>
-      {{ item.body | markdownFilter | safe }}
-      {% include "partials/components/call-to-action.njk" %}
-    </article>
+      <article>
+        {{ item.body | markdownFilter | safe }}
+        {% include "partials/components/call-to-action.njk" %}
+      </article>
   </div>
 </section>

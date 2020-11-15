@@ -1,9 +1,85 @@
 .banner {
   background-color: $header-bg;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.header-shim {
+  opacity:0;
+  max-height: 133px;
 }
 
 .navbar {
+  transition: padding 0.25s ease;
   background-color: $navbar-bg;
+
+  &.shrink {
+    padding-top: 0.65rem !important;
+    padding-bottom: 0.65rem !important;
+  }
+  
+  .container {
+    position: relative;
+  }
+
+  .navbar-brand {
+    position: absolute;
+    left: 0;
+    bottom: -1.5rem;
+    transition: bottom 0.25s ease;
+
+    img {
+      max-width: 266px;
+      max-height:266px;
+      width: 266px;
+      height: auto;
+      position: relative;
+      top:50%;
+      transition: width 0.25s ease;
+      transform: translateY(50%);
+      margin-bottom: -2px;
+    }
+
+    &.shrink {
+      bottom: -0.65rem;
+
+      img {
+        width: 133px;
+      }
+    }
+  }
+
+  .navbar-phone {
+    @extend .text-success;
+  }
+
+  .navbar-collapse {
+    @extend .flex-column ,.align-items-end;
+  }
+
+  .navbar-nav {
+    @include media-breakpoint-up(md) {
+      align-items: flex-end;
+    }
+
+    .nav-link {
+      @extend .h5, .mb-0, .pb-0, .pl-5, .pr-0;
+      text-transform:uppercase;
+
+      .item-wrap {
+        @extend .text-center;
+        
+        display: block;
+
+        + .item-wrap {
+          font-weight: normal;
+        }
+      }
+    }
+  }
 }
 
 .container-logo {

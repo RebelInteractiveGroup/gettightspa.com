@@ -1,0 +1,8 @@
+.section-form {
+    @extend .py-5;
+
+    > div {
+        @extend .py-3;
+    }
+
+}

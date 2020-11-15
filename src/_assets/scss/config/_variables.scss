@@ -34,12 +34,14 @@ $sidebar-cols: map-get(map-get($tokens, 'spacing'), 'sidebar-cols');
 
 
 // Fonts
+$google-fonts: map-get(map-get($tokens, 'fonts'), 'googleFonts');
 @mixin google-font($family) {
-  $family: str-replace(inspect($family), ' ', '+');
-  @import url("https://fonts.googleapis.com/css?family=#{$family}&display=swap");
+  $family: str-replace(inspect(unquote($family)), ' ', '+');
+  @import url("https://fonts.googleapis.com/css2?family=#{$family}&display=swap");
 }
-@include google-font(map-get(map-get($tokens, 'fonts'), 'baseFontName'));
-@include google-font(map-get(map-get($tokens, 'fonts'), 'headingsFontName'));
+@each $font in $google-fonts {
+  @include google-font($font);
+}
 
 $font-family-sans-serif: map-get(map-get($tokens, 'fonts'), 'baseFontName');
 $headings-font-family: map-get(map-get($tokens, 'fonts'), 'headingsFontName');

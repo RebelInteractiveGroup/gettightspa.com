@@ -1,0 +1,10 @@
+<section class="section section-large-cta text-{{ item.textAlign }}">
+    {% if item.bgImage %}
+        <img class='bg-image' src="{{ item.bgImage }}">
+    {% endif %}
+  <div class="{{ item.container }}">
+      <article>
+        {% include "partials/components/call-to-action.njk" %}
+      </article>
+  </div>
+</section>

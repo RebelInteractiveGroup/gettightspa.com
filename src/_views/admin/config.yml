@@ -341,7 +341,7 @@ collections:
           - {label: "Maximum Posts Per Page", name: "maxPostsPerPage", widget: "number", default: 5}
           - {label: "Show Theme Credit", name: "showThemeCredit", widget: "boolean", default: true}
           - {label: "Favicon", name: "favicon", widget: "image"}
-          - {label: "Logo", name: "logo", widget: "image", default: "/_assets/images/logo.svg" }
+          - {label: "Logo", name: "logo", widget: "image", default: "/_assets/images/get_tight_logo_svg.svg" }
           - {label: "Phone Number", name: "phoneNumber", widget: "string" }
           - {label: "Sidebar Title", name: "sidebarTitle", widget: "string" }
           - {label: "Form HTML", name: "formHtml", widget: "text" }

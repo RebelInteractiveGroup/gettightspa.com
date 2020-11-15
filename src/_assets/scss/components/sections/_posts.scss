@@ -1,0 +1,11 @@
+.section-posts {
+    @extend .py-5;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    > div {
+        @extend .py-3;
+    }
+
+}

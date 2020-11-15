@@ -1,0 +1,24 @@
+.section-large-cta {
+    @extend .p-0;
+
+    position: relative;
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    .bg-image {
+        position: relative;
+        width: 100%;
+        max-width: 1440px;
+        z-index: 1;
+    }
+
+    > div {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        z-index: 2;
+    }    
+}

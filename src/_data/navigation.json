@@ -3,12 +3,25 @@
   "navbar-color-scheme": "light",
   "items": [
     {
-      "text": "Home",
+      "text": "About Us",
       "url": "/",
       "external": false
     },
     {
-      "text": "Contact",
+      "text": "EmSculpt",
+      "supportingText": "for Fat Loss & Muscle Gain",
+      "url": "/contact/",
+      "external": false
+    },
+    {
+      "text": "SculpSure",
+      "supportingText": "for Fat Loss & Body Contouring",
+      "url": "/contact/",
+      "external": false
+    },
+    {
+      "text": "Emsella ",
+      "supportingText": "for Pelvic Muscle Stimulation",
       "url": "/contact/",
       "external": false
     }

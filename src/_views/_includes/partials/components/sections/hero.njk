@@ -1,6 +1,6 @@
-<section class="section section-hero text-{{ item.textColor }} text-{{ item.textAlign }}">
+<section class="section section-hero text-{{ item.textAlign }}">
   <div class="{{ item.container }}">
-    <div class="hero-bg embed-responsive background-{{ item.backgroundAttachment }}" style="background-image: url({{ item.background }})">
+    <div class="hero-bg embed-responsive background-{{ item.backgroundAttachment }}" style="background-image: url({{ item.background }}); background-position:{{ item.backgroundPosition }};">
       {% if item.video %}
         <video autoplay muted loop id="heroVideo">
           <source src="/images/hero.mp4" type="video/mp4">
@@ -18,5 +18,8 @@
       </aside>
         {% endif %}
     </div>
+  </div>
+  <div class='gradient-holder'>
+    <img src="/_assets/images/Diamond_Graphic.svg">
   </div>
 </section>

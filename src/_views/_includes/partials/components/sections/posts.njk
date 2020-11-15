@@ -1,0 +1,17 @@
+{% if postListHeading == null %}
+  {% set postListHeading = item.postListHeading %}
+{% endif %}
+
+{% if collection == null %}
+  {% set postListItems = collections.posts %}
+{% else %}
+    {% set postListItems = collections[collection] %}
+{% endif %}
+
+<section class="section section-posts text-{{ item.textAlign }}" style="background-image: url({{ item.background }}); background-position:{{ item.backgroundPosition }};">
+  <div class="{{ item.container }}">
+      <article>
+        {% include "partials/components/post-list.njk" %}
+      </article>
+  </div>
+</section>
