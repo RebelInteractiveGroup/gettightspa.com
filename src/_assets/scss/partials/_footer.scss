@@ -1,14 +1,19 @@
 .content-info {
   background-color: $footer-bg;
   color: $footer-color;
+  margin-top: 7rem;
 
   .logo-holder {
     @extend .bg-white;
     position: relative;
     z-index: 2;
+    
 
     img {
-      transform: translateY(50%);
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
     }
 
     + .container {
