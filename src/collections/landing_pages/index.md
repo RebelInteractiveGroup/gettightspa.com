@@ -46,12 +46,12 @@ components:
     bgImage: "/_assets/images/GET_TIGHT_BigTextGraphic_1X.png"
     body: >-
 
-  - type: posts
+  - type: services
     container: container
     textAlign: center
     background: "/_assets/images/Diamond_Graphic_Pattern.svg"
     backgroundPosition: "center center"
-    postListHeading: "How do you want to get tight?"
+    pageListHeading: "How do you want to get tight?"
     body: >-
       ### How do you want to get tight?
 
@@ -68,9 +68,9 @@ components:
       - type: before-after
         text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
         beforeImage: "/_assets/images/Before.jpg"
-        beforeImageAlt: "Before"
+        beforeImageAlt: "Before EmSculpt"
         afterImage: "/_assets/images/After.jpg"
-        afterImageAlt: "After"
+        afterImageAlt: "Before EmSculpt"
 
     
 

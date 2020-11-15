@@ -1,0 +1,17 @@
+{% if serviceListHeading == null %}
+  {% set serviceListHeading = item.serviceListHeading %}
+{% endif %}
+
+{% if collection == null %}
+  {% set serviceListItems = collections.services %}
+{% else %}
+    {% set serviceListItems = collections.services %}
+{% endif %}
+
+<section class="section section-services text-{{ item.textAlign }}" style="background-image: url({{ item.background }}); background-position:{{ item.backgroundPosition }};">
+  <div class="{{ item.container }}">
+      <article>
+        {% include "partials/components/service-list.njk" %}
+      </article>
+  </div>
+</section>

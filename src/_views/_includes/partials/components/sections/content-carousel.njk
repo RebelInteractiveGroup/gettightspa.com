@@ -15,20 +15,22 @@
       <div class="carousel-inner">
         {% for image in item.slides %}
         <div class="carousel-item {% if loop.first == true %} active {% endif %}">
-            {{ image.text | markdownFilter | safe }}
+            
+            <div class='text'>
+              {{ image.text | markdownFilter | safe }}
+            </div>
     
             <div class='row justify-content-center'>
                 
                 <div class='col-4'>
                     <img src="{{ image.beforeImage }}" class="d-block w-100" alt="{{ site.name }} {{ beforeImage.alt }}">
-                    <p>{{ beforeImage.alt }}</p>
+                    <p>{{ image.beforeImageAlt }}</p>
                 </div>
                 <div class='col-4'>
                     <img src="{{ image.afterImage }}" class="d-block w-100" alt="{{ site.name }} {{ afterImage.alt }}">
-                    <p>{{ afterImage.alt }}</p>
+                    <p>{{ image.afterImageAlt }}</p>
                 </div>
             </div>
-                
         </div>
         {% endfor %}
       </div>

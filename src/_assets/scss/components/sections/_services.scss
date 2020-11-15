@@ -1,0 +1,27 @@
+.section-services {
+    @extend .py-5;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    > div {
+        @extend .py-3;
+    }
+
+    .service {
+        @extend .col-12, .col-md-4;
+
+        .img-fluid {
+            @extend .mb-4;
+        }
+
+        p {
+            @extend .text-left, .mb-0;
+
+            a {
+                @extend .h6, .mt-0, .text-left;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
