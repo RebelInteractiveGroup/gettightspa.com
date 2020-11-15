@@ -3,7 +3,7 @@ import $ from "jquery";
 
 // import 'bootstrap/js/dist/alert';
 // import 'bootstrap/js/dist/button';
-//import 'bootstrap/js/dist/carousel';
+import 'bootstrap/js/dist/carousel';
 import 'bootstrap/js/dist/collapse';
 import 'bootstrap/js/dist/dropdown';
 // import 'bootstrap/js/dist/modal';
@@ -29,5 +29,8 @@ $(function(){
                 $("#main-header").find(".navbar, .navbar-brand").removeClass("shrink");
             }
         });
+
+        $carousel = $(".carousel").carousel();
+        $carousel.carousel("pause");
     });
 });

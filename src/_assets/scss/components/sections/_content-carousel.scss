@@ -4,10 +4,12 @@
 
   & > .container-fluid {
     @extend .px-0;
+    position: relative;
   }
 
   & > .container {
     @extend .bg-white, .px-4, .py-4;
+    position: relative;
   }
 
   @include media-breakpoint-up(md) {
@@ -15,6 +17,28 @@
       max-width: 80%;
       margin: auto;
     }
+  }
+
+  .carousel-control-prev-holder,
+  .carousel-control-next-holder {
+    @extend .d-block;
+
+    position: absolute;
+    top: 50%;
+  }
+  .carousel-control-prev-holder {
+    left: 0;
+    transform: translateX(-100%) translateY(-50%);
+  }
+  .carousel-control-next-holder {
+    right: 0;
+    transform: translateX(100%) translateY(-50%);
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: relative;
+    width: 100%;
   }
 
   .carousel-item {
