@@ -1,6 +1,7 @@
 .section-content-carousel {
   @extend .my-0, .py-0;
   background: linear-gradient(180deg, #9FD672 0%, #315A0F 100%);
+  overflow: hidden;
 
   & > .container-fluid {
     @extend .px-0;
@@ -10,6 +11,16 @@
   & > .container {
     @extend .bg-white, .px-4, .py-4;
     position: relative;
+
+    @include media-breakpoint-down(md) {
+      max-width: 70%;
+      margin:auto;
+
+      .carousel-control-prev-holder,
+      .carousel-control-next-holder {
+        width: 22%;
+      }
+    }
   }
 
   @include media-breakpoint-up(md) {

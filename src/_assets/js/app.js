@@ -16,7 +16,7 @@ import 'bootstrap/js/dist/dropdown';
 
 $(function(){
     $(document).ready(function() {
-        var shrinkTrigger = parseInt($("#main-header").height() * 0.5);
+        var shrinkTrigger = parseInt($("#main-header").height() * 0.25);
 
         $(window).scroll(function(){
             if($(this).scrollTop()>=shrinkTrigger){
@@ -25,6 +25,10 @@ $(function(){
             else {
                 $("#main-header").find(".navbar, .navbar-brand").removeClass("shrink");
             }
+        });
+
+        $(".navbar-toggler").on("click", function(e) {
+            $("#main-header").find(".navbar-brand").toggleClass("nav-open");
         });
 
         $carousel = $(".carousel").carousel();

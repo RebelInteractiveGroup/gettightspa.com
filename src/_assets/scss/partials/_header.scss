@@ -5,37 +5,62 @@
   left: 0;
   right: 0;
   z-index: 99;
+  
 }
 
 .header-shim {
   opacity:0;
   max-height: 133px;
+
+  @include media-breakpoint-down(md) {
+    max-height: 133px;
+  }
+}
+
+.navbar-phone {
+  @extend .text-success, .d-block, .d-md-inline, .text-center;
 }
 
 .navbar {
-  transition: padding 0.25s ease;
+  transition: all 0.25s ease;
   background-color: $navbar-bg;
-
+  min-height: 133px;
+  
   &.shrink {
-    padding-top: 0.65rem !important;
-    padding-bottom: 0.65rem !important;
+    min-height: 66px;
+
+    @include media-breakpoint-up(md) {
+      padding-top: 0.65rem !important;
+      padding-bottom: 0.65rem !important;
+    }
+    
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15);
   }
+  
   
   .container {
     position: relative;
   }
 
+  .navbar-toggler {
+    @extend .ml-auto;
+
+    position: relative;
+    z-index: 2;
+    border: 0;
+  }
   .navbar-brand {
     position: absolute;
     left: 0;
     bottom: -1.5rem;
     transition: bottom 0.25s ease;
+    z-index:1;
 
     img {
+      display: block;
       max-width: 266px;
       max-height:266px;
-      width: 266px;
+      width: 100%;
       height: auto;
       position: relative;
       top:50%;
@@ -44,7 +69,20 @@
       margin-bottom: -2px;
     }
 
-    &.shrink {
+    @include media-breakpoint-down(md) {
+      right: 0;
+      margin-right: 0;
+      
+      img {
+        transform: translateY(calc(50% + 1rem));
+        max-width: 202px;
+        max-height: 202px;
+        margin:auto;
+      }
+    }
+
+    &.shrink,
+    &.nav-open {
       bottom: -0.65rem;
 
       img {
@@ -53,21 +91,18 @@
     }
   }
 
-  .navbar-phone {
-    @extend .text-success;
-  }
-
   .navbar-collapse {
     @extend .flex-column ,.align-items-end;
   }
 
   .navbar-nav {
+    @extend .pb-5, .pb-md-0;
     @include media-breakpoint-up(md) {
       align-items: flex-end;
     }
 
     .nav-link {
-      @extend .h5, .mb-0, .pb-0, .pl-5, .pr-0;
+      @extend .h5, .mb-0, .pb-0, .pl-md-5, .pr-0;
       text-transform:uppercase;
 
       .item-wrap {
