@@ -7,7 +7,7 @@
         
         {{ service.data.body | markdownFilter | safe }}
         
-        <p><a href="{{ service.url }}" class="service-list__link" rel="bookmark">{{ service.data.linkText }}</a><p>
+        <p class='d-none'><a href="{{ service.url }}" class="service-list__link" rel="bookmark">{{ service.data.linkText }}</a><p>
     </div>
   {% endfor %}
 </div>
