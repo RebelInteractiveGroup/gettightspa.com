@@ -95,6 +95,7 @@ components:
     container: container
     textAlign: center
     formHeader: Book your free consultation today!
+    fadeClass: fade--in
     body: >-
       ### How do you want to get tight?
 ---
