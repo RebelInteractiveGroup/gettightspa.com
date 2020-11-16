@@ -1,0 +1,19 @@
+.slide-in-cta {
+    @extend .text-center, .bg-primary, .pt-2;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    transform: translateY(100%);
+    transition: transform 0.25s ease;
+
+    > * {
+        @extend .text-white;
+    }
+
+    &.active {
+        transform: translateY(0%);
+    }
+}

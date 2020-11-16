@@ -22,6 +22,9 @@
   {% include "partials/global/site-foot.njk" %}
   {% block foot %}
   {% endblock %}
+
+  {% include "partials/components/slide-in-cta.njk" %}
+  
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {

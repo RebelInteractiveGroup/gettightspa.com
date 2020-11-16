@@ -73,21 +73,21 @@ components:
         beforeImage: "/_assets/images/Before.jpg"
         beforeImageAlt: "Before EmSculpt"
         afterImage: "/_assets/images/After.jpg"
-        afterImageAlt: "After EmSculpt"
+        afterImageAlt: "After EmSculpt*\n <small>*after 4 treatments</small>"
 
       - type: before-after
         text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
         beforeImage: "/_assets/images/Before.jpg"
         beforeImageAlt: "Before EmSculpt"
         afterImage: "/_assets/images/After.jpg"
-        afterImageAlt: "After EmSculpt"
+        afterImageAlt: "After EmSculpt*\n <small>*after 4 treatments</small>"
 
       - type: before-after
         text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
         beforeImage: "/_assets/images/Before.jpg"
         beforeImageAlt: "Before EmSculpt"
         afterImage: "/_assets/images/After.jpg"
-        afterImageAlt: "After EmSculpt"
+        afterImageAlt: "After EmSculpt*\n <small>*after 4 treatments</small>"
 
     
 
