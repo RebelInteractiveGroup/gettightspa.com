@@ -1,9 +1,9 @@
 {% if serviceListItems.length %}
-<h2 class="">{{ serviceListHeading }}</h2>
+<h2 class="d-none">{{ serviceListHeading }}</h2>
 <div class="row">
 
   {% for service in serviceListItems %} 
-    <div class="service {% if item.fadeClass %} {{ item.fadeClass }} fade--delay--{{ loop.index }} {% endif %}">
+    <div class="service {% if item.fadeClass %}{{ item.fadeClass }} fade--delay--{{ loop.index }} {% endif %}">
         <img src="{{ service.data.socialImage }}" class="img-fluid" alt="{{ service.data.title }}">
         
         {{ service.data.body | markdownFilter | safe }}
