@@ -3,7 +3,7 @@
         <img class='bg-image' src="{{ item.bgImage }}">
     {% endif %}
   <div class="{{ item.container }}">
-      <article class='{{ item.fadeClass }}{% if item.fadeClass %} {% endif %}'>
+      <article class='{% if item.fadeClass %}{{ item.fadeClass }}{% endif %}'>
         <h2>{{ item.formHeader }}</h2>
         {% include "partials/components/contact-form.njk" %}
       </article>
