@@ -33,8 +33,10 @@
   }
 
   .footer-nav {
+    @extend .justify-content-md-end, .justify-content-center;
+    
     .nav-link {
-      @extend .py-0, .mt-2, .justify-content-center; 
+      @extend .py-0, .mt-2; 
 
       &:last-child {
         padding-right: 0;
@@ -43,7 +45,7 @@
   }
 
   .nav-socialmedia{
-    @extend .justify-content-center;
+    @extend .justify-content-md-end, .justify-content-center;
 
     .socialmedia-icon {
       @extend .mx-1;

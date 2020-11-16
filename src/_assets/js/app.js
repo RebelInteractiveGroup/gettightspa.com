@@ -28,10 +28,11 @@ $(function(){
         });
 
         $(".navbar-toggler").on("click", function(e) {
+            $(this).toggleClass("is-active");
             $("#main-header").find(".navbar-brand").toggleClass("nav-open");
         });
 
-        $carousel = $(".carousel").carousel();
+        var $carousel = $(".carousel").carousel();
         $carousel.carousel("pause");
     });
 });
