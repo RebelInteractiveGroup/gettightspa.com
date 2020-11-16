@@ -51,6 +51,7 @@ components:
   - type: services
     container: container
     textAlign: center
+    fadeClass: fade--up
     background: "/_assets/images/Diamond_Graphic_Pattern.svg"
     backgroundPosition: "center center"
     pageListHeading: "How do you want to get tight?"

@@ -2,7 +2,7 @@
 <h2 class="">{{ serviceListHeading }}</h2>
 <div class="row">
   {% for service in serviceListItems %} 
-    <div class="service">
+    <div class="service {% if fadeClass %} {{ fadeClass }} {% endif %}">
         <img src="{{ service.data.socialImage }}" class="img-fluid" alt="{{ service.data.title }}">
         
         {{ service.data.body | markdownFilter | safe }}

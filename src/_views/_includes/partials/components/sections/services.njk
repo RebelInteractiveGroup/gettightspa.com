@@ -2,6 +2,8 @@
   {% set serviceListHeading = item.serviceListHeading %}
 {% endif %}
 
+{% set fadeClass = item.fadeClass %}
+
 {% if collection == null %}
   {% set serviceListItems = collections.services %}
 {% else %}
