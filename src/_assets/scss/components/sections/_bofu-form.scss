@@ -15,7 +15,9 @@
         }
 
         .text-center {
-            @extend .mx-auto;
+            @extend .d-block;
+            
+            width: 100%;
         }
     }
 
