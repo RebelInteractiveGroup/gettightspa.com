@@ -5,4 +5,18 @@
         @extend .py-3;
     }
 
+    form {
+        @extend .row;
+
+        .form-group {
+            @extend .col-12, .col-md-6;
+
+            width: 50%;
+        }
+
+        .text-center {
+            @extend .mx-auto;
+        }
+    }
+
 }
