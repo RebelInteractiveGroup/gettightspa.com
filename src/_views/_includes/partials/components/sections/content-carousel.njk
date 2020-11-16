@@ -24,11 +24,11 @@
 
             <div class='col-12 col-md-4'>
               <img src="{{ image.beforeImage }}" class="d-block w-100" alt="{{ site.name }} {{ beforeImage.alt }}">
-              <p>{{ image.beforeImageAlt | markdownFilter | safe }}</p>
+              {{ image.beforeImageAlt | markdownFilter | safe }}
             </div>
             <div class='col-12 col-md-4'>
               <img src="{{ image.afterImage }}" class="d-block w-100" alt="{{ site.name }} {{ afterImage.alt }}">
-              <p>{{ image.afterImageAlt | markdownFilter | safe }}</p>
+              {{ image.afterImageAlt | markdownFilter | safe }}
             </div>
           </div>
         </div>
