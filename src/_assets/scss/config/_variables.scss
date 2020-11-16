@@ -18,6 +18,9 @@ $header-bg: map-get($header-colors, 'header-bg');
 $footer-bg: map-get($body-colors, 'footer-bg');
 $footer-color: map-get($body-colors, 'footer-color');
 
+$primary: map-get($theme-colors, 'primary');
+
+
 // Global settings
 $enable-rounded: map-get(map-get($tokens, 'global-settings'), 'enable-rounded');
 $enable-shadows: map-get(map-get($tokens, 'global-settings'), 'enable-shadows');

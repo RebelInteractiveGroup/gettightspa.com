@@ -8,7 +8,7 @@ metaDesc: "GetTightSpa.com"
 components:
   - type: hero
     container: container
-    background: "/_assets/images/Home_Page_Header.jpg"
+    background: "/_assets/images/HomePageHeader_Image_1X.jpg"
     backgroundAttachment: none
     backgroundPosition: "top right"
     textAlign: left

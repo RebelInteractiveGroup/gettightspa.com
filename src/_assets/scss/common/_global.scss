@@ -77,6 +77,11 @@ p {
 
 .btn-primary {
   background-color: #ffffff;
+
+  &:hover {
+    color: $black;
+    background-color: lighten($primary, 25%);
+  }
 }
 
 // IMAGES
