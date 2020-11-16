@@ -21,7 +21,7 @@ import 'bootstrap/js/dist/dropdown';
 function initFades() {
     $('.fade--in, .fade--up, .fade--down, .fade--left, .fade--right').each(function () {
         if ($(this).offset().top + $(window).height() * 0.25 <= $(document).scrollTop() + $(window).height()) {
-            $(this).addClass('fade');
+            $(this).addClass('fade show');
         }
     });
 }
@@ -36,7 +36,7 @@ $(window).on('load', function(){
     });
 
     $('.fade--load').each(function () {
-        $(this).addClass('fade');
+        $(this).addClass('fade show');
     });
 
     setTimeout(function() {
