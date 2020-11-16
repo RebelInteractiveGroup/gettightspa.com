@@ -24,7 +24,7 @@ components:
   - type: content
     container: container
     textAlign: center
-    fadeClass: fade--up
+    fadeClass: fade--up fade--delay--3
     body: >-
       ## Trust the Science. Love the Results.
 
