@@ -27,21 +27,19 @@ function initFades() {
 }
 
 $(window).on('load', function(){
-    setTimeout(function() {
+    initFades();
+    console.log("window load");
+    $(window).scroll(function () {
         initFades();
-        console.log("window load");
-        $(window).scroll(function () {
-            initFades();
-        });
-        $(window).resize(function () {
-            initFades();
-        });
+    });
+    $(window).resize(function () {
+        initFades();
+    });
 
-    
-        $('.fade--load').each(function () {
-            $(this).addClass('fade');
-        });
-    }, 3000);
+
+    $('.fade--load').each(function () {
+        $(this).addClass('fade');
+    });
 });
 
 $(function(){

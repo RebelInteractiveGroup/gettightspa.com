@@ -7,8 +7,8 @@
         </video>
       {% endif %}
     </div>
-    <div class="row {{ item.flexRowOrder }} align-items-center fade--up">
-      <article class="hero-article col-md-6">
+    <div class="row {{ item.flexRowOrder }} align-items-center">
+      <article class="hero-article col-md-6 fade--load fade--in">
         {{ item.body | markdownFilter | safe }}
         {% include "partials/components/call-to-action.njk" %}
       </article>
