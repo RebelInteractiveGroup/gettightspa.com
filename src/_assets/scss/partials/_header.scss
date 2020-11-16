@@ -17,8 +17,28 @@
   }
 }
 
+.header-cta {
+  @extend .d-block, .d-md-inline, .text-center;
+
+  a {
+    @extend .d-inline-block, .my-0;
+
+    line-height: 100%;
+
+    &.navbar-cta {
+      font-size: 80%;
+      bottom: 2px;
+      position: relative;
+
+      @include media-breakpoint-up(md) {
+        margin-right: 1em;
+      }
+    }
+  }
+}
+
 .navbar-phone {
-  @extend .text-success, .d-block, .d-md-inline, .text-center;
+  @extend .text-success;
 }
 
 .navbar {
@@ -94,6 +114,10 @@
 
   .navbar-collapse {
     @extend .flex-column ,.align-items-end;
+
+    & > h3 {
+      @extend .text-center;
+    }
   }
 
   .navbar-nav {

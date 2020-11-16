@@ -16,9 +16,9 @@
       <div class="carousel-inner">
         {% for image in item.slides %}
         <div class="carousel-item {% if loop.first == true %} active {% endif %}">
-          <div class='text'>
+          {# <div class='text'>
             {{ image.text | markdownFilter | safe }}
-          </div>
+          </div> #}
 
           <div class='row justify-content-center'>
 

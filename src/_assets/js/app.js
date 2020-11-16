@@ -32,6 +32,17 @@ $(function(){
             $("#main-header").find(".navbar-brand").toggleClass("nav-open");
         });
 
+
+        $('.navbar-cta').click(function(e) {
+            e.preventDefault();
+
+            $('html, body').stop().animate({
+                scrollTop: $('.section-form').offset().top - $("header.banner").outerHeight()
+            }, 1500);
+
+        });
+
+
         var $carousel = $(".carousel").carousel();
         $carousel.carousel("pause");
     });

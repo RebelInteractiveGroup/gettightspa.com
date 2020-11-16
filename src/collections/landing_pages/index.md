@@ -61,30 +61,30 @@ components:
     showIndicators: false
     showNavigation: true
     body: >-
-      ## We offer real results.
+      ## We offer real results. 
       
-      ## Here’s what people are saying about us.
+      ## You'll believe it when you see it.
     slides:
       - type: before-after
         text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
         beforeImage: "/_assets/images/Before.jpg"
         beforeImageAlt: "Before EmSculpt"
         afterImage: "/_assets/images/After.jpg"
-        afterImageAlt: "Before EmSculpt"
+        afterImageAlt: "After EmSculpt"
 
       - type: before-after
         text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
         beforeImage: "/_assets/images/Before.jpg"
         beforeImageAlt: "Before EmSculpt"
         afterImage: "/_assets/images/After.jpg"
-        afterImageAlt: "Before EmSculpt"
+        afterImageAlt: "After EmSculpt"
 
       - type: before-after
         text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
         beforeImage: "/_assets/images/Before.jpg"
         beforeImageAlt: "Before EmSculpt"
         afterImage: "/_assets/images/After.jpg"
-        afterImageAlt: "Before EmSculpt"
+        afterImageAlt: "After EmSculpt"
 
     
 

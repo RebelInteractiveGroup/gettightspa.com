@@ -12,7 +12,13 @@
       </button>
 
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <h4><a class='navbar-phone' href="tel:{{ site.phoneNumber }}">{{ site.phoneNumber }}</a></h4>
+        <h3 class='header-cta'>
+          <a href='#' class='navbar-cta text-center'>
+            Book Your Free Consultation
+          </a>
+          
+          <a class='navbar-phone' href="tel:{{ site.phoneNumber }}">{{ site.phoneNumber }}</a>
+        </h3>
         <ul class="navbar-nav w-100 justify-content-{{ navigation['justify-navbar-contents'] }}">
 
         {% for item in navigation.items %}
