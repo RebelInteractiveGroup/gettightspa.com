@@ -20,7 +20,7 @@ import 'bootstrap/js/dist/dropdown';
 //fades and whatnot
 function initFades() {
     $('.fade--in, .fade--up, .fade--down, .fade--left, .fade--right').each(function () {
-        if ($(this).offset().top + $(window).height() * 0.5 <= $(document).scrollTop() + $(window).height()) {
+        if ($(this).offset().top + $(window).height() * 0.1 <= $(document).scrollTop() + $(window).height()) {
             $(this).addClass('fade');
         }
     });
