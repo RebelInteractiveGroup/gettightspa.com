@@ -1,5 +1,5 @@
 <section class="section section-content text-{{ item.textAlign }}">
-  <div class="{{ item.container }}">
+  <div class="{{ item.container }} {{ item.fadeClass }}">
       <article>
         {{ item.body | markdownFilter | safe }}
         {% include "partials/components/call-to-action.njk" %}

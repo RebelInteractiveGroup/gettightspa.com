@@ -28,7 +28,6 @@ function initFades() {
 
 $(window).on('load', function(){
     initFades();
-    console.log("window load");
     $(window).scroll(function () {
         initFades();
     });
@@ -36,15 +35,12 @@ $(window).on('load', function(){
         initFades();
     });
 
-
     $('.fade--load').each(function () {
         $(this).addClass('fade');
     });
 });
 
 $(function(){
-    
-    console.log("doc ready");
     var shrinkTrigger = parseInt($("#main-header").height() * 0.25);
 
     $(window).scroll(function(){

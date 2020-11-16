@@ -12,6 +12,7 @@ components:
     backgroundAttachment: none
     backgroundPosition: "top right"
     textAlign: left
+    fadeClass: fade--in fade--load
     flexRowOrder: row
     body: >-
       ## Stronger,
@@ -23,6 +24,7 @@ components:
   - type: content
     container: container
     textAlign: center
+    fadeClass: fade--up
     body: >-
       ## Trust the Science. Love the Results.
 
