@@ -9,7 +9,7 @@
     }
 
     .service {
-        @extend .col-12, .col-md-4, .mb-4;
+        @extend .col-12, .col-md-4, .mb-4, .mb-md-0;
 
         .img-fluid {
             @extend .mb-4;
