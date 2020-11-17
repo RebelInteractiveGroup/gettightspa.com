@@ -2,9 +2,9 @@
 layout: home
 permalink: /
 socialImage: ""
-title: GetTightSpa.com
-metaTitle: GetTightSpa.com
-metaDesc: "GetTightSpa.com"
+title: Stronger, Healthier, Sexier you
+metaTitle: "Stronger, Healthier, Sexier you"
+metaDesc: "Stronger, Healthier, Sexier you"
 components:
   - type: hero
     container: container
