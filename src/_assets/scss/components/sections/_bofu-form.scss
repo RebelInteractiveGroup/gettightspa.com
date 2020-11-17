@@ -6,22 +6,45 @@
     }
 
     form {
-        @extend .text-left, .row, .mt-4;
+        @extend .text-left, .mt-4;
 
         label {
             @extend .text-left, .mb-0;
+
+            position: relative;
+            bottom: -0.25rem;
         }
 
         .form-control {
+            @extend .pt-0, .mb-3;
+
             border: 0;
             box-shadow: 0 1px 1px rgba(0,0,0,.075);
         }
 
         .submit-holder {
-            @extend .mt-4, .col-12, .text-center, .row, .justify-content-md-between;
+            @extend .mt-2, .mt-md-4, .pt-4, .col-12, .text-center, .row, .justify-content-md-between;
 
-            div {
-                @extend .col-12, .col-md-4;
+            > div {
+                @include media-breakpoint-up(md) {
+                    display: flex;
+                    width: 100%;
+                }
+
+                div {
+                    @extend .col-12, .col-md-4, .d-block, .d-md-flex, .text-center;
+
+                    .btn {
+                        @extend .my-4, .my-md-0;
+                    }
+
+                    &:first-child {
+                        @extend .text-md-left;
+                    }
+                    &:last-child {
+                        @extend .text-md-right;
+                    }
+                }
             }
         }
     }

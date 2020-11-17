@@ -1,5 +1,5 @@
 .slide-in-cta {
-    @extend .text-center, .bg-primary, .pt-2;
+    @extend .text-center, .bg-primary, .pt-5, .pt-md-2;
 
     position: fixed;
     left: 0;
@@ -15,5 +15,23 @@
 
     &.active {
         transform: translateY(0%);
+    }
+
+    h3 {
+        @extend .text-darker;
+    }
+
+    .close {
+        @extend .btn, .btn-link;
+
+        min-width: 0;
+        position: absolute;
+        top: -10px;
+        right : 0;
+        padding: 10px;
+
+        img {
+            width: 30px;
+        }
     }
 }

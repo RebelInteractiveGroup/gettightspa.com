@@ -41,6 +41,12 @@ $(window).on('load', function(){
 
     setTimeout(function() {
         $(".slide-in-cta").addClass("active");
+
+        $(".slide-in-cta").find(".close").on("click", function(e) {
+            e.preventDefault();
+
+            $(".slide-in-cta").removeClass(".close");
+        });
     }, 3000);
 });
 
