@@ -25,12 +25,11 @@
         }
 
         .navbar-phone {
-            @extend .mt-3;
+            font-size: 80%;
         }
 
         .submit-holder {
             @extend .mt-4, .mt-md-4, .pt-4, .text-center, .row;
-            width: 100%;
 
 
             > div {
@@ -40,11 +39,16 @@
                     @extend .my-4, .my-md-0, .mx-auto;
                 }
 
+                h3 {
+                    width: 100%;
+                }
+
                 &:first-child {
                     @extend .text-md-left;
                 }
                 &:last-child {
                     @extend .text-md-right;
+                    
                 }
             }
             
