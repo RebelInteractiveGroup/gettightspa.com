@@ -37,7 +37,7 @@
                     @extend .col-12, .col-md-4, .d-block, .d-md-flex, .text-center;
 
                     .btn {
-                        @extend .my-4, .my-md-0;
+                        @extend .my-4, .my-md-0, .mx-auto;
                     }
 
                     &:first-child {
