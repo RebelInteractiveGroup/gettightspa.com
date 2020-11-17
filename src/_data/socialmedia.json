@@ -2,23 +2,15 @@
   "items": [
     {
       "text": "Facebook",
-      "url": "https//facebook.com",
-      "icon": "/_assets/images/facebook-f-brands.svg"
+      "url": "https://www.facebook.com/Get-Tight-Spa-111753517391803",
+      "icon": "/_assets/images/facebook-f-brands.svg",
+      "external": true
     },
     {
       "text": "Instagram",
-      "url": "https://instagram.com",
-      "icon": "/_assets/images/instagram-brands.svg"
-    },
-    {
-      "text": "Twitter",
-      "url": "https://twitter.com",
-      "icon": "/_assets/images/twitter-brands.svg"
-    },
-    {
-      "text": "YouTube",
-      "url": "https://youtube.com",
-      "icon": "/_assets/images/youtube-in-brands.svg"
+      "url": "https://instagram.com/gettightspa?igshid=18wa63bnp9h72",
+      "icon": "/_assets/images/instagram-brands.svg",
+      "external": true
     }
   ]
 }
