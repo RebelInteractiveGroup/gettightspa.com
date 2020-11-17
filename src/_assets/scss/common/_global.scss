@@ -78,7 +78,8 @@ p {
 .btn-primary {
   background-color: #ffffff;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $black;
     background-color: lighten($primary, 25%);
   }
