@@ -49,6 +49,15 @@ components:
 
     slides:
       - type: testimonial
+        text: "\"This is my 2nd set of Emsculpt. I can definitely tell a difference from my treatments and would highly recommend it for anyone else not wanting to go under the knife. A great addition to your regular exercise routine! Glutes: 1/10 on the intensity scale (at 100% power). Honestly, it's actually comfortable and enjoyable for me. Abs: 5/10 on the intensity scale (at 100% power). And it's true when they tell you that you’ll crave the treatments.\""
+
+      - type: testimonial
+        text: "\"I’m a 38-yr. old mom. I’ve reached my goal weight of 123 lbs. at 5’5, but due to having children and honestly always having a soft loose belly, I still was unhappy with how my stomach looked. The Emsculpt is mostly to build muscle and is not the same as cool sculpting. The procedure itself is only 30 mins long and not painful at all. I’ve had 2 of the 4 treatments and feel like I already see a slight difference and definitely already feel that my core is stronger. I can’t wait to see how it looks in 4 weeks from now when I should see the full results!\""
+
+      - type: testimonial
+        text: "\"I am a mom of two, after giving birth naturally and a c section I had a lack of strength in my abs. Emsculpt was the answer!! 7 months after having a baby I had ab strength like never before and it improves with time. I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again. I’ve had pelvic pain since my first birth, and it went away after I strengthened my core. I can do more squats and feel the strength when I’m exercising. Emsculpt is definitely worth a try.\""
+        
+      - type: testimonial
         text: "\"Amazing experience! Very informative and the procedure doesn’t hurt at all! I already feel like I have more energy!\""
 
       - type: testimonial
