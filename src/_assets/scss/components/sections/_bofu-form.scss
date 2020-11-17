@@ -6,10 +6,10 @@
     }
 
     form {
-        @extend .text-left, .mt-5;
+        @extend .mt-5;
 
         label {
-            @extend .text-left, .mb-0;
+            @extend .d-block, .text-left, .mb-0;
 
             position: relative;
             bottom: -0.25rem;
@@ -25,29 +25,25 @@
         }
 
         .submit-holder {
-            @extend .mt-4, .mt-md-4, .pt-4, .col-12, .text-center, .row, .justify-content-md-between;
+            @extend .mt-4, .mt-md-4, .pt-4, .text-center, .row;
+            width: 100%;
+
 
             > div {
-                @include media-breakpoint-up(md) {
-                    display: flex;
-                    width: 100%;
+                @extend .col-12, .col-md-4, .d-block, .d-md-flex, .text-center;
+
+                .btn {
+                    @extend .my-4, .my-md-0, .mx-auto;
                 }
 
-                div {
-                    @extend .col-12, .col-md-4, .d-block, .d-md-flex, .text-center;
-
-                    .btn {
-                        @extend .my-4, .my-md-0, .mx-auto;
-                    }
-
-                    &:first-child {
-                        @extend .text-md-left;
-                    }
-                    &:last-child {
-                        @extend .text-md-right;
-                    }
+                &:first-child {
+                    @extend .text-md-left;
+                }
+                &:last-child {
+                    @extend .text-md-right;
                 }
             }
+            
         }
     }
 
