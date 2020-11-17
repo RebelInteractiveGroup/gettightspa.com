@@ -98,72 +98,72 @@ components:
     slides:
       - type: before-after
         text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
-        beforeImage: "/_assets/images/before_after_Emsculpt/1_Emsculpt_Before.png"
+        beforeImage: "/_assets/images/before_after_Emsculpt/1_EmSculpt_Before.png"
         beforeImageAlt: "Before Emsculpt"
-        afterImage: "/_assets/images/before_after_Emsculpt/1_Emsculpt_After.png"
+        afterImage: "/_assets/images/before_after_Emsculpt/1_EmSculpt_After.png"
         afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
 
       - type: before-after
         text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
-        beforeImage: "/_assets/images/before_after_Emsculpt/2_Emsculpt_Before.png"
+        beforeImage: "/_assets/images/before_after_Emsculpt/2_EmSculpt_Before.png"
         beforeImageAlt: "Before Emsculpt"
-        afterImage: "/_assets/images/before_after_Emsculpt/2_Emsculpt_After.png"
+        afterImage: "/_assets/images/before_after_Emsculpt/2_EmSculpt_After.png"
         afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
 
       - type: before-after
         text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
-        beforeImage: "/_assets/images/before_after_Emsculpt/3_Emsculpt_Before.png"
+        beforeImage: "/_assets/images/before_after_Emsculpt/3_EmSculpt_Before.png"
         beforeImageAlt: "Before Emsculpt"
-        afterImage: "/_assets/images/before_after_Emsculpt/3_Emsculpt_After.png"
+        afterImage: "/_assets/images/before_after_Emsculpt/3_EmSculpt_After.png"
         afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
 
       - type: before-after
         text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
-        beforeImage: "/_assets/images/before_after_Emsculpt/4_Emsculpt_Before.png"
+        beforeImage: "/_assets/images/before_after_Emsculpt/4_EmSculpt_Before.png"
         beforeImageAlt: "Before Emsculpt"
-        afterImage: "/_assets/images/before_after_Emsculpt/4_Emsculpt_After.png"
+        afterImage: "/_assets/images/before_after_Emsculpt/4_EmSculpt_After.png"
         afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
 
       - type: before-after
         text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
-        beforeImage: "/_assets/images/before_after_Emsculpt/5_Emsculpt_Before.png"
+        beforeImage: "/_assets/images/before_after_Emsculpt/5_EmSculpt_Before.png"
         beforeImageAlt: "Before Emsculpt"
-        afterImage: "/_assets/images/before_after_Emsculpt/5_Emsculpt_After.png"
+        afterImage: "/_assets/images/before_after_Emsculpt/5_EmSculpt_After.png"
         afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
 
       - type: before-after
         text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
-        beforeImage: "/_assets/images/before_after_Emsculpt/6_Emsculpt_Before.png"
+        beforeImage: "/_assets/images/before_after_Emsculpt/6_EmSculpt_Before.png"
         beforeImageAlt: "Before Emsculpt"
-        afterImage: "/_assets/images/before_after_Emsculpt/6_Emsculpt_After.png"
+        afterImage: "/_assets/images/before_after_Emsculpt/6_EmSculpt_After.png"
         afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
 
       - type: before-after
         text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
-        beforeImage: "/_assets/images/before_after_Emsculpt/7_Emsculpt_Before.png"
+        beforeImage: "/_assets/images/before_after_Emsculpt/7_EmSculpt_Before.png"
         beforeImageAlt: "Before Emsculpt"
-        afterImage: "/_assets/images/before_after_Emsculpt/7_Emsculpt_After.png"
+        afterImage: "/_assets/images/before_after_Emsculpt/7_EmSculpt_After.png"
         afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
 
       - type: before-after
         text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
-        beforeImage: "/_assets/images/before_after_Emsculpt/8_Emsculpt_Before.png"
+        beforeImage: "/_assets/images/before_after_Emsculpt/8_EmSculpt_Before.png"
         beforeImageAlt: "Before Emsculpt"
-        afterImage: "/_assets/images/before_after_Emsculpt/8_Emsculpt_After.png"
+        afterImage: "/_assets/images/before_after_Emsculpt/8_EmSculpt_After.png"
         afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
 
       - type: before-after
         text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
-        beforeImage: "/_assets/images/before_after_Emsculpt/9_Emsculpt_Before.png"
+        beforeImage: "/_assets/images/before_after_Emsculpt/9_EmSculpt_Before.png"
         beforeImageAlt: "Before Emsculpt"
-        afterImage: "/_assets/images/before_after_Emsculpt/9_Emsculpt_After.png"
+        afterImage: "/_assets/images/before_after_Emsculpt/9_EmSculpt_After.png"
         afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
 
       - type: before-after
         text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
-        beforeImage: "/_assets/images/before_after_Emsculpt/10_Emsculpt_Before.png"
+        beforeImage: "/_assets/images/before_after_Emsculpt/10_EmSculpt_Before.png"
         beforeImageAlt: "Before Emsculpt"
-        afterImage: "/_assets/images/before_after_Emsculpt/10_Emsculpt_After.png"
+        afterImage: "/_assets/images/before_after_Emsculpt/10_EmSculpt_After.png"
         afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
 
   - type: bofu-form
