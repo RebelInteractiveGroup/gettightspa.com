@@ -24,6 +24,10 @@
             box-shadow: none !important;
         }
 
+        .navbar-phone {
+            @extend .mt-3;
+        }
+
         .submit-holder {
             @extend .mt-4, .mt-md-4, .pt-4, .text-center, .row;
             width: 100%;
