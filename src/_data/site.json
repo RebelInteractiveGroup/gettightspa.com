@@ -1,7 +1,7 @@
 {
   "name": "GetTightSpa.com",
   "shortName": "gettightspa.com",
-  "icon": "src/images/favicon.svg",
+  "icon": "/_assets/icons/favicon-96x96.png",
   "showThemeCredit": true,
   "logo": "/_assets/images/get_tight_logo_svg.svg",
   "shortDesc": "Get Tight Spa",
