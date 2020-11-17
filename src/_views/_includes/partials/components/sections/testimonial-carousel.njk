@@ -1,0 +1,47 @@
+{% set carouselIndex = loop.index %}
+
+<section class="section section-testimonial-carousel {{ item.fadeClass }} text-{{ item.textAlign }}">
+  <div class="{{ item.container }}">
+
+    <img class='quote' src='/_assets/images/quote-right-solid.svg' alt='{{ site.name }}'>
+    <div id="carousel{{ carouselIndex }}" class="carousel slide" data-ride="carousel">
+      {% if item.showIndicators %}
+      <ol class="carousel-indicators">
+        {% for slide in item.slides %}
+        <li data-target="#carousel{{ carouselIndex }}" data-slide-to="{{ loop.index0 }}"
+          class="{% if loop.first == true %} active {% endif %}"></li>
+        {% endfor %}
+      </ol>
+      {% endif %}
+      <div class="carousel-inner">
+        {% for image in item.slides %}
+        <div class="carousel-item {% if loop.first == true %} active {% endif %}">
+          <div class='text'>
+            <blockquote>
+                {{ image.text | markdownFilter | safe }}
+            </blockquote>	
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    {% if item.showNavigation %}
+    <span class='carousel-control-prev-holder'>
+      <a class="carousel-control-prev" href="#carousel{{ carouselIndex }}" role="button" data-slide="prev">
+        <img src='/_assets/images/Arrow_Left.svg' alt="Previous">
+        
+        <span class="sr-only">Previous</span>
+      </a>
+    </span>
+    <span class='carousel-control-next-holder'>
+      <a class="carousel-control-next" href="#carousel{{ carouselIndex }}" role="button" data-slide="next">
+        <img src='/_assets/images/Arrow_Right.svg' alt="Previous">
+        
+        <span class="sr-only">Next</span>
+      </a>
+    </span>
+    {% endif %}
+
+  </div>
+</section>

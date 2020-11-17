@@ -37,6 +37,34 @@ components:
       
 
       A personalized consultation with one of our staff will provide a tailored treatment plan to address your areas of concern.
+  
+
+  - type: testimonial-carousel
+    container: container
+    textAlign: center
+    showIndicators: true
+    showNavigation: false
+    fadeClass: fade--in
+    body: >-
+
+    slides:
+      - type: testimonial
+        text: "\"Amazing experience! Very informative and the procedure doesn’t hurt at all! I already feel like I have more energy!\""
+
+      - type: testimonial
+        text: "\"I had EmSculpt on my glutes and thighs. It helped me build muscle in two regions that I struggle with building muscle and it tone/lifted my glute. I got AMAZING results with Emsculpt. It was easy and completely non-invasive treatment, without breaking a sweat.\""
+
+      - type: testimonial
+        text: "\"I had EmSculpt done on my arms and I’m very pleased with it and my shirts are looser now around the arms area. I would do the treatment again with no question asked! My arms look great! It’s painless.\""
+
+      - type: testimonial
+        text: "\"Loved my experience with Dr. Beausoliel and her staff!! She is so attentive and provided ample time for questions. I had Sculpture done and she stayed with me the entire time. It is a very relaxing environment. Highly recommend Dr. Beausoleil!!! \""
+
+      - type: testimonial
+        text: "\"I can't believe a place like this is finally here. I had my consultation today. The staff is great, such a wonderful, friendly and informative experience. Brand new state of the art equipment to muscle build and maintain a tight firm body. This is exactly what I have been looking for, for a long time. Since my auto accident I have not been able to attend any gym and due to an injury I also can't lift anything anymore I'm excited to get started on this journey shaping and tightening this body to perfection.\""
+
+      - type: testimonial
+        text: "\"I started my arm SculpSure series last week, after my first treatment, I put on a shirt that normally fits snug around my arms and now the shirt finally fits comfortably! It actually worked! I am very pleased with the treatment and service I received from Get Tight Spa and I will definitely come back for more treatments in the near future.\""
 
   - type: large-cta
     container: container

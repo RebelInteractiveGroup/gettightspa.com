@@ -1,0 +1,72 @@
+.section-testimonial-carousel {
+  @extend .mt-0, .mb-5, .py-0, .bg-success, .text-white;
+
+  & > .container-fluid {
+    @extend .px-0;
+    position: relative;
+  }
+
+  & > .container {
+    @extend .px-2, .py-5;
+    position: relative;
+
+    @include media-breakpoint-down(md) {
+      max-width: 70%;
+      margin:auto;
+
+      .carousel-control-prev-holder,
+      .carousel-control-next-holder {
+        width: 22%;
+      }
+    }
+  }
+
+  .quote {
+    width: 40px;
+    height: 40px;
+    filter: brightness(0) invert(1);
+  }
+
+  @include media-breakpoint-up(md) {
+    .carousel {
+      max-width: 90%;
+      margin: auto;
+    }
+  }
+
+  .carousel-control-prev-holder,
+  .carousel-control-next-holder {
+    @extend .d-block;
+
+    position: absolute;
+    top: 50%;
+  }
+  .carousel-control-prev-holder {
+    left: 0;
+    transform: translateX(-100%) translateY(-50%);
+  }
+  .carousel-control-next-holder {
+    right: 0;
+    transform: translateX(100%) translateY(-50%);
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: relative;
+    width: 100%;
+  }
+
+  .carousel-item {
+    img {
+      @extend .img-fluid;
+
+      + p {
+        @extend .my-4, .py-3;
+      }
+    }
+
+    .text {
+      @extend .py-4, .mt-4, .mb-md-5; 
+    }
+  }
+}
