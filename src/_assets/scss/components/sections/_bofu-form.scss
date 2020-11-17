@@ -6,7 +6,7 @@
     }
 
     form {
-        @extend .text-left, .mt-4;
+        @extend .text-left, .mt-5, .row;
 
         label {
             @extend .text-left, .mb-0;
