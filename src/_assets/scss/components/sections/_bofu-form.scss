@@ -31,7 +31,6 @@
         .submit-holder {
             @extend .mt-4, .mt-md-4, .pt-4, .text-center, .row;
 
-
             > div {
                 @extend .col-12, .col-md-4, .d-block, .d-md-flex, .text-center;
 
@@ -40,19 +39,21 @@
                 }
 
                 h3 {
+                    @extend .my-2;
                     width: 100%;
                 }
 
                 &:first-child {
-                    @extend .text-md-left;
+                    @extend .text-md-left, .order-1, .order-md-0;
+
+                    + div {
+                        @extend .order-0, .order-md-1;
+                    }
                 }
                 &:last-child {
-                    @extend .text-md-right;
-                    
+                    @extend .text-md-right, .order-2;
                 }
             }
-            
         }
     }
-
 }

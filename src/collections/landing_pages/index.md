@@ -138,9 +138,6 @@ components:
         afterImage: "/_assets/images/before_after_emsculpt/10_EmSculpt_After.png"
         afterImageAlt: "After EmSculpt*\n <small>*after 4 treatments</small>"
 
-
-    
-
   - type: bofu-form
     container: container
     textAlign: center

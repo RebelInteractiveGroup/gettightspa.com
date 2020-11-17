@@ -1,5 +1,5 @@
 ---
-title: 'Z EmSculpt'
+title: 'EmSculpt'
 permalink: '/emsculpt-for-fat-loss-muscle-gain/'
 socialImage: '/_assets/images/EmSculpt.jpg'
 linkText: 'Learn More'
