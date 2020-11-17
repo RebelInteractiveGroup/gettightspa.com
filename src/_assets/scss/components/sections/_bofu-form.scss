@@ -19,11 +19,13 @@
             @extend .pt-0, .mb-3;
 
             border: 0;
-            box-shadow: 0 1px 1px rgba(0,0,0,.075);
+            border-radius: 0 !important;
+            border-bottom: solid 1px $darker;
+            box-shadow: none !important;
         }
 
         .submit-holder {
-            @extend .mt-2, .mt-md-4, .pt-4, .col-12, .text-center, .row, .justify-content-md-between;
+            @extend .mt-4, .mt-md-4, .pt-4, .col-12, .text-center, .row, .justify-content-md-between;
 
             > div {
                 @include media-breakpoint-up(md) {
