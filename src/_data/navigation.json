@@ -4,25 +4,25 @@
   "items": [
     {
       "text": "About Us",
-      "url": "#heading-trust-the-science.-love-the-results.",
+      "url": ".section-content",
       "external": false
     },
     {
       "text": "EmSculpt",
       "supportingText": "for Fat Loss & Muscle Gain",
-      "url": "#",
+      "url": ".section-services",
       "external": false
     },
     {
       "text": "SculpSure",
       "supportingText": "for Fat Loss & Body Contouring",
-      "url": "#",
+      "url": ".section-services",
       "external": false
     },
     {
       "text": "Emsella ",
       "supportingText": "for Pelvic Muscle Stimulation",
-      "url": "#",
+      "url": ".section-services",
       "external": false
     }
   ]
