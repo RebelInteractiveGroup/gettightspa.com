@@ -67,7 +67,7 @@ $(function(){
         $("#main-header").find(".navbar-brand").toggleClass("nav-open");
     });
 
-    $('.navbar-cta').click(function(e) {
+    $('.navbar-cta, .section-large-cta .btn').click(function(e) {
         e.preventDefault();
 
         $('html, body').stop().animate({
