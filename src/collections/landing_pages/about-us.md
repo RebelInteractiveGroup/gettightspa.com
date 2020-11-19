@@ -3,9 +3,9 @@ layout: home
 permalink: "/about-get-tight/"
 eleventyExcludeFromCollections: true
 socialImage: ""
-title: Stronger, Healthier, Sexier you
-metaTitle: "Stronger, Healthier, Sexier you"
-metaDesc: "Stronger, Healthier, Sexier you"
+title: About Get Tight Spa
+metaTitle: "About Get Tight Spa"
+metaDesc: "About Get Tight Spa"
 components:
   - type: hero
     container: container
