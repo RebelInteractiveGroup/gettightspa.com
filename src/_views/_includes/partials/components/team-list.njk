@@ -1,0 +1,16 @@
+{% if teamListItems.length %}
+<h2 class="d-none">{{ teamListHeading }}</h2>
+<div class="row">
+
+  {% for team in teamListItems %} 
+    <div class="team {% if item.fadeClass %}{{ item.fadeClass }} fade--delay--{{ loop.index }} {% endif %}">
+        <img src="{{ team.data.socialImage }}" class="img-fluid" alt="{{ team.data.title }}">
+        
+        {{ team.data.body | markdownFilter | safe }}
+        
+        <p class='d-none'><a href="{{ team.url }}" class="team-list__link" rel="bookmark">{{ team.data.linkText }}</a><p>
+    </div>
+  {% endfor %}
+
+</div>
+{% endif %}

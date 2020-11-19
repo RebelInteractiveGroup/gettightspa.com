@@ -1,0 +1,19 @@
+{% if teamListHeading == null %}
+  {% set teamListHeading = item.teamListHeading %}
+{% endif %}
+
+{% set fadeClass = item.fadeClass %}
+
+{% if collection == null %}
+  {% set teamListItems = collections.teams %}
+{% else %}
+    {% set teamListItems = collections.teams %}
+{% endif %}
+
+<section class="section section-teams text-{{ item.textAlign }}" style="background-image: url({{ item.background }}); background-position:{{ item.backgroundPosition }};">
+  <div class="{{ item.container }}">
+      <article>
+        {% include "partials/components/team-list.njk" %}
+      </article>
+  </div>
+</section>
