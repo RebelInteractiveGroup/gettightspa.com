@@ -23,11 +23,16 @@
         .diamond-wrapper {
             @extend .mb-5;
             //transform: rotate(45deg);
+            overflow: hidden;
   
 
             .inner {
                 position: relative;
                 height: 265px;
+
+                @include media-breakpoint-down(md) {
+                    transform: translateX(-15%);
+                }
 
                 .diamond {
                     height: 190px;
@@ -44,7 +49,6 @@
                     height: auto;
                     position: absolute;
                     right: 0;
-
                     //transform: rotate(-45deg);
                 }
             }
