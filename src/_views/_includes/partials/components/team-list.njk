@@ -2,14 +2,54 @@
 <h2 class="d-none">{{ teamListHeading }}</h2>
 <div class="row">
 
-  {% for team in teamListItems %} 
-    <div class="team {% if item.fadeClass %}{{ item.fadeClass }} fade--delay--{{ loop.index }} {% endif %}">
-        <img src="{{ team.data.socialImage }}" class="img-fluid" alt="{{ team.data.title }}">
-        
-        {{ team.data.body | markdownFilter | safe }}
-        
-        <p class='d-none'><a href="{{ team.url }}" class="team-list__link" rel="bookmark">{{ team.data.linkText }}</a><p>
+  {% for team in teamListItems %}
+  <div class="team-member {% if item.fadeClass %}{{ item.fadeClass }} fade--delay--{{ loop.index }} {% endif %}">
+    <div class='diamond-wrapper'>
+      <div class='inner'>
+        <div class='borderr'>
+        </div>
+        <img src="{{ team.data.bioImage }}" class="img-fluid" alt="{{ team.data.title }}">
+      </div>
     </div>
+
+    <p class='title'>
+      <strong>{{ team.data.title }}</strong>
+    </p>
+
+    {{ team.data.body | markdownFilter | safe }}
+
+    <p>
+      <button class="team-list__link" data-toggle="modal"
+        data-target="#team-modal-{{ loop.index }}">
+        <strong>
+          {{ team.data.linkText }}
+        </strong>
+      </button>
+    </p>
+
+    <div class="modal fade" id="team-modal-{{ loop.index }}" tabindex="-1" role="dialog"
+      aria-labelledby="team-modal-{{ loop.index }}" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p class="modal-title" id="exampleModalLabel"><strong>{{ team.data.title }}</strong></p>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class='image'>
+              <img src="{{ team.data.popupImage }}" class="img-fluid" alt="{{ team.data.title }} - {{ site.name }}">
+            </div>
+            {{ team.data.body | markdownFilter | safe }}
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   {% endfor %}
 
 </div>

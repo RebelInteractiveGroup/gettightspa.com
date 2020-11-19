@@ -1,9 +1,10 @@
 ---
 title: 'Shannon Beausoleil, MD'
-permalink: '/shannon -bausoleil-md/'
-socialImage: '/_assets/images/EmSculpt.jpg'
-linkText: 'Learn More'
+permalink: '/shannon-bausoleil-md/'
+bioImage: '/_assets/images/bio_images/shannon-bausoleil-md.jpg'
+popupImage: '/_assets/images/popup_images/shannon-bausoleil-md.jpg'
+linkText: 'read more'
 body: >-
-    Chief Operating Officer of GET TIGHT Spa. She brings a wealth of experience in developing and operating businesses to make humans better — period. Believing that everyone should have access to transformation — mental, physical, and emotional, her goal is to help you achieve what you have always dreamed about. The beauty of change is that once you push yourself to achieve one thing — it is a “domino-like effect” — the  countless paths and doors to freedom and positivity emerge.
+    Chief Medical Director at Get Tight Spa and  is a trusted medical doctor in West Hartford. Dr. Beausoleil has decided to expand her former West Hartford spa, Aspire Wellness, into Get Tight Spa. She is an internal medicine and pediatrics specialist with more than 20 years of clinical experience. She firmly believes in treating the whole person and offering preventative measures of treatment for overall health. She is certified in internal medicine by the American Board of Internal Medicine.  She believes that anyone can achieve better health at any time through diet, exercise, stress management, and that high-tech body sculpting and fat loss can fast-track patients on the journey to wellness. In addition, Emsella is an excellent vehicle to address urinary incontinence, sexual dysfunction, and overall sexual health. Schedule your consultation with Dr. B today!
 ---
 

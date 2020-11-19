@@ -1,6 +1,7 @@
 ---
 layout: home
 permalink: "/about-get-tight/"
+eleventyExcludeFromCollections: true
 socialImage: ""
 title: Stronger, Healthier, Sexier you
 metaTitle: "Stronger, Healthier, Sexier you"
@@ -15,16 +16,6 @@ components:
     fadeClass: fade--in fade--load
     flexRowOrder: row
     body: >-
-      
-
-  - type: content
-    container: container
-    textAlign: left
-    fadeClass: fade--up fade--delay--3
-    body: >-
-      ## Trust the Science. Love the Results.
-
-      Dr. Beausoleil has curated a team of highly trained medical professionals to provide exceptional service and honest results. Dr. Beausoleil has a history of running successful medspas with the same technology and achieving all 5-star customer reviews.
 
   - type: team
     container: container
@@ -33,7 +24,9 @@ components:
     backgroundPosition: "center center"
     teamListHeading: "How do you want to get tight?"
     body: >-
-      ### How do you want to get tight?
+      ## Trust the Science. Love the Results.
+
+      Dr. Beausoleil has curated a team of highly trained medical professionals to provide exceptional service and honest results. Dr. Beausoleil has a history of running successful medspas with the same technology and achieving all 5-star customer reviews.
 
   - type: content-carousel
     container: container

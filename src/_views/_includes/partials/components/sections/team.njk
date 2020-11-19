@@ -10,7 +10,13 @@
     {% set teamListItems = collections.teams %}
 {% endif %}
 
-<section class="section section-teams text-{{ item.textAlign }}" style="background-image: url({{ item.background }}); background-position:{{ item.backgroundPosition }};">
+<section class="section section-team" style="background-image: url({{ item.background }}); background-position:{{ item.backgroundPosition }};">
+  <div class="{{ item.container }} {{ item.fadeClass }} content">
+      <article class="text-{{ item.textAlign }}">
+        {{ item.body | markdownFilter | safe }}
+      </article>
+  </div>
+
   <div class="{{ item.container }}">
       <article>
         {% include "partials/components/team-list.njk" %}

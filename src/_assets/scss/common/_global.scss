@@ -91,6 +91,11 @@ img {
 }
 
 
+// MODAL
+.modal-backdrop.show {
+  opacity: 0.1;
+}
+
 // CONTENT
 .section {
   @extend .full-width;
