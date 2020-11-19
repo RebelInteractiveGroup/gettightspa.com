@@ -1,0 +1,120 @@
+---
+layout: home
+permalink: "/about-get-tight/"
+socialImage: ""
+title: Stronger, Healthier, Sexier you
+metaTitle: "Stronger, Healthier, Sexier you"
+metaDesc: "Stronger, Healthier, Sexier you"
+components:
+  - type: hero
+    container: container
+    background: "/_assets/images/get_tight_spa_about_us_hero_bg.jpg"
+    backgroundAttachment: none
+    backgroundPosition: "top right"
+    textAlign: left
+    fadeClass: fade--in fade--load
+    flexRowOrder: row
+    body: >-
+      
+
+  - type: content
+    container: container
+    textAlign: left
+    fadeClass: fade--up fade--delay--3
+    body: >-
+      ## Trust the Science. Love the Results.
+
+      Dr. Beausoleil has curated a team of highly trained medical professionals to provide exceptional service and honest results. Dr. Beausoleil has a history of running successful medspas with the same technology and achieving all 5-star customer reviews.
+
+  - type: team
+    container: container
+    textAlign: left
+    fadeClass: fade--up
+    backgroundPosition: "center center"
+    teamListHeading: "How do you want to get tight?"
+    body: >-
+      ### How do you want to get tight?
+
+  - type: content-carousel
+    container: container
+    textAlign: center
+    showIndicators: false
+    showNavigation: true
+    body: >-
+      ## We offer real results. 
+      
+      ## You'll believe it when you see it.
+
+    slides:
+      - type: before-after
+        text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
+        beforeImage: "/_assets/images/before_after_emsculpt/1_EmSculpt_Before.jpg"
+        beforeImageAlt: "Before Emsculpt"
+        afterImage: "/_assets/images/before_after_emsculpt/1_EmSculpt_After.jpg"
+        afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
+
+      - type: before-after
+        text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
+        beforeImage: "/_assets/images/before_after_emsculpt/2_EmSculpt_Before.jpg"
+        beforeImageAlt: "Before Emsculpt"
+        afterImage: "/_assets/images/before_after_emsculpt/2_EmSculpt_After.jpg"
+        afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
+
+      - type: before-after
+        text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
+        beforeImage: "/_assets/images/before_after_emsculpt/3_EmSculpt_Before.jpg"
+        beforeImageAlt: "Before Emsculpt"
+        afterImage: "/_assets/images/before_after_emsculpt/3_EmSculpt_After.jpg"
+        afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
+
+      - type: before-after
+        text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
+        beforeImage: "/_assets/images/before_after_emsculpt/4_EmSculpt_Before.jpg"
+        beforeImageAlt: "Before Emsculpt"
+        afterImage: "/_assets/images/before_after_emsculpt/4_EmSculpt_After.jpg"
+        afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
+
+      - type: before-after
+        text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
+        beforeImage: "/_assets/images/before_after_emsculpt/5_EmSculpt_Before.jpg"
+        beforeImageAlt: "Before Emsculpt"
+        afterImage: "/_assets/images/before_after_emsculpt/5_EmSculpt_After.jpg"
+        afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
+
+      - type: before-after
+        text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
+        beforeImage: "/_assets/images/before_after_emsculpt/6_EmSculpt_Before.jpg"
+        beforeImageAlt: "Before Emsculpt"
+        afterImage: "/_assets/images/before_after_emsculpt/6_EmSculpt_After.jpg"
+        afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
+
+      - type: before-after
+        text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
+        beforeImage: "/_assets/images/before_after_emsculpt/7_EmSculpt_Before.jpg"
+        beforeImageAlt: "Before Emsculpt"
+        afterImage: "/_assets/images/before_after_emsculpt/7_EmSculpt_After.jpg"
+        afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
+
+      - type: before-after
+        text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
+        beforeImage: "/_assets/images/before_after_emsculpt/8_EmSculpt_Before.jpg"
+        beforeImageAlt: "Before Emsculpt"
+        afterImage: "/_assets/images/before_after_emsculpt/8_EmSculpt_After.jpg"
+        afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
+
+      - type: before-after
+        text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
+        beforeImage: "/_assets/images/before_after_emsculpt/9_EmSculpt_Before.jpg"
+        beforeImageAlt: "Before Emsculpt"
+        afterImage: "/_assets/images/before_after_emsculpt/9_EmSculpt_After.jpg"
+        afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
+
+      - type: before-after
+        text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
+        beforeImage: "/_assets/images/before_after_emsculpt/10_EmSculpt_Before.jpg"
+        beforeImageAlt: "Before Emsculpt"
+        afterImage: "/_assets/images/before_after_emsculpt/10_EmSculpt_After.jpg"
+        afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
+
+
+---
