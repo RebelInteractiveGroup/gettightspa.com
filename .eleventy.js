@@ -70,6 +70,12 @@ module.exports = function(config) {
       ...collection.getFilteredByGlob('./src/collections/services/*.md')
     ];
   });
+
+  config.addCollection('teams', collection => {
+    return [
+      ...collection.getFilteredByGlob('./src/collections/team/*.md')
+    ];
+  });
   
 
   // Plugins
