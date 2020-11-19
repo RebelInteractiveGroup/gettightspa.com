@@ -1,7 +1,7 @@
 ---
 title: 'Shannon Beausoleil, MD'
 permalink: '/shannon-bausoleil-md/'
-bioImage: '/_assets/images/bio_images/shannon-bausoleil-md.jpg'
+bioImage: '/_assets/images/bio_images/shannon-bausoleil-md.png'
 popupImage: '/_assets/images/popup_images/shannon-bausoleil-md.jpg'
 linkText: 'read more'
 body: >-

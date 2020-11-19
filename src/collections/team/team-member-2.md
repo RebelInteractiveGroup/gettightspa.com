@@ -1,7 +1,7 @@
 ---
 title: 'Kristine Schlichting, Ph.D'
 permalink: '/kristine-schlichting-phd/'
-bioImage: '/_assets/images/bio_images/kristine-schlichting-phd.jpg'
+bioImage: '/_assets/images/bio_images/kristine-schlichting-phd.png'
 popupImage: '/_assets/images/popup_images/kristine-schlichting-phd.jpg'
 linkText: 'read more'
 body: >-

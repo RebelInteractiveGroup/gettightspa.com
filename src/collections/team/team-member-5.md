@@ -1,7 +1,7 @@
 ---
 title: 'Kaitlin Zak, Spa Coordinator'
 permalink: '/kaitlin-zak-spa-coordinator/'
-bioImage: '/_assets/images/bio_images/kaitlin-zak-spa-coordinator.jpg'
+bioImage: '/_assets/images/bio_images/kaitlin-zak-spa-coordinator.png'
 popupImage: '/_assets/images/popup_images/kaitlin-zak-spa-coordinator.jpg'
 linkText: 'read more'
 body: >-

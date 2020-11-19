@@ -21,15 +21,29 @@
         @extend .col-12, .col-md-4, .mb-4;
 
         .diamond-wrapper {
-            @extend .mb-4;
+            @extend .mb-5;
             //transform: rotate(45deg);
   
 
             .inner {
+                position: relative;
+                height: 265px;
+
+                .diamond {
+                    height: 190px;
+                    width: 190px;
+                    border: solid 2px #ccc;
+                    position: absolute;
+                    left: -30px;
+                    top: 40%;
+                    transform: rotate(45deg) translateX(0) translateY(-50%);
+                }
 
                 > img {
                     width: 265px;
                     height: auto;
+                    position: absolute;
+                    right: 0;
 
                     //transform: rotate(-45deg);
                 }
