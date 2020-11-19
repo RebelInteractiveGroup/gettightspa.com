@@ -48,11 +48,23 @@
                     width: 265px;
                     height: auto;
                     position: absolute;
-                    right: 0;
+                    right: 24%;
+                    transition: all 0.5s ease;
+                    transition-delay: 0.25s;
                     //transform: rotate(-45deg);
                 }
             }
 
+        }
+
+        &.show {
+            .diamond-wrapper {
+                .inner {
+                    > img {
+                        right: 0;
+                    }
+                }
+            }
         }
 
         .title {
