@@ -65,11 +65,12 @@ module.exports = function(config) {
       .slice(0, site.maxPostsPerPage);
   });
 
-  config.addCollection('services', collection => {
-    return [
-      ...collection.getFilteredByGlob('./src/collections/services/*.md')
-    ];
+  config.addCollection("services", function(collection) {
+    return collection.getFilteredByGlob('./src/collections/services/*.md').sort(function(a, b) {
+      return b.data.order - a.data.order;
+    }).reverse();
   });
+
 
   config.addCollection('teams', collection => {
     return [

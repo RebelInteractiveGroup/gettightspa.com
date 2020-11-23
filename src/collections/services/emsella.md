@@ -1,9 +1,10 @@
 ---
 title: 'Emsella'
+order: 2
 permalink: '/emsella-for-fat-loss-muscle-gain/'
 socialImage: '/_assets/images/Emsella.jpg'
 linkText: 'Learn More'
 body: >-
-    **Emsella** stimulates pelvic floor muscles to help restore bladder and pelvic muscle control without time-consuming exercises.
+    **Emsella** stimulates pelvic floor muscles to restore bladder and pelvic muscle control, and increase sexual function without time-consuming exercises. Very effective for both men and women.
 ---
 
