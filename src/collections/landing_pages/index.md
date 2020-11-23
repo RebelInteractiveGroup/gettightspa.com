@@ -113,9 +113,9 @@ components:
 
       - type: before-after
         beforeImage: "/_assets/images/before_after_sculpsure/gettightspa_sculpsure_flanks_-_before.jpg"
-        beforeImageAlt: "Before Sculpsure"
+        beforeImageAlt: "Before SculpSure"
         afterImage: "/_assets/images/before_after_sculpsure/gettightspa_sculpsure_flanks_-_after.jpg"
-        afterImageAlt: "After Sculpsure*\n <small>*after 2 treatments</small>"
+        afterImageAlt: "After SculpSure*\n <small>*after 2 treatments</small>"
 
       - type: before-after
         beforeImage: "/_assets/images/before_after_emsculpt/2_EmSculpt_Before.jpg"
@@ -125,9 +125,9 @@ components:
 
       - type: before-after
         beforeImage: "/_assets/images/before_after_sculpsure/gettightspa_sculpsure_inner_thighs_-_before.jpg"
-        beforeImageAlt: "Before Sculpsure"
+        beforeImageAlt: "Before SculpSure"
         afterImage: "/_assets/images/before_after_sculpsure/gettightspa_sculpsure_inner_thighs_-_after.jpg"
-        afterImageAlt: "After Sculpsure*\n <small>*after 2 treatments</small>"
+        afterImageAlt: "After SculpSure*\n <small>*after 2 treatments</small>"
 
       - type: before-after
         beforeImage: "/_assets/images/before_after_emsculpt/3_EmSculpt_Before.jpg"
@@ -137,9 +137,9 @@ components:
 
       - type: before-after
         beforeImage: "/_assets/images/before_after_sculpsure/gettightspa_sculpsure_lower_abdomen_-_before.jpg"
-        beforeImageAlt: "Before Sculpsure"
+        beforeImageAlt: "Before SculpSure"
         afterImage: "/_assets/images/before_after_sculpsure/gettightspa_sculpsure_lower_abdomen_-_after.jpg"
-        afterImageAlt: "After Sculpsure*\n <small>*after 2 treatments</small>"
+        afterImageAlt: "After SculpSure*\n <small>*after 2 treatments</small>"
 
       - type: before-after
         beforeImage: "/_assets/images/before_after_emsculpt/4_EmSculpt_Before.jpg"
@@ -149,9 +149,9 @@ components:
 
       - type: before-after
         beforeImage: "/_assets/images/before_after_sculpsure/gettightspa_sculpsure_upper___lower_abdomen_-_before.jpg"
-        beforeImageAlt: "Before Sculpsure"
+        beforeImageAlt: "Before SculpSure"
         afterImage: "/_assets/images/before_after_sculpsure/gettightspa_sculpsure_upper___lower_abdomen_-_after.jpg"
-        afterImageAlt: "After Sculpsure*\n <small>*after 2 treatments</small>"
+        afterImageAlt: "After SculpSure*\n <small>*after 2 treatments</small>"
 
       - type: before-after
         beforeImage: "/_assets/images/before_after_emsculpt/5_EmSculpt_Before.jpg"
