@@ -71,7 +71,7 @@
 
         .title {
             @extend .mb-0;
-            color: #F15D3D;
+            color: $dark-orange;
 
             + p {
                 @extend .mb-0;
@@ -85,7 +85,7 @@
 
         .team-list__link {
             @extend .p-0, .bg-white;
-            color: #F15D3D;
+            color: $dark-orange;
             border: 0;
         
         }
@@ -96,7 +96,7 @@
             @extend .text-center, .align-items-end;
             position: relative;
             border: 0;
-            color: #F15D3D;
+            color: $dark-orange;
 
             .modal-title {
                 @extend .d-block, .w-100, .pt-5;
@@ -112,7 +112,7 @@
                 top: 0;
                 padding: 0;
                 right: 10px;
-                color: #F15D3D;
+                color: $dark-orange;
             }
         }
 
