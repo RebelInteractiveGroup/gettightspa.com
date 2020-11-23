@@ -26,6 +26,9 @@ components:
     body: >-
       ## Trust the Science. Love the Results.
 
+      We are not a traditional medical spa. We think and function differently. Our mission is to provide the most scientifically validated, non-surgical methods to stimulate the body’s natural anti-aging response. The high tech machines that we use boost collagen, build muscle, permanently destroy fat cells and create a refreshed, revitalized, and renewed version of your absolute best self. Our practical purpose is to empower our clients to develop and function in the world with a powerful purpose. 
+
+
       Dr. Beausoleil has curated a team of highly trained medical professionals to provide exceptional service and honest results. Dr. Beausoleil has a history of running successful medspas with the same technology and achieving all 5-star customer reviews.
 
   - type: content-carousel
