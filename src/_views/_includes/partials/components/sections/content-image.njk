@@ -1,0 +1,15 @@
+<section class="section section-content-image">
+    {# {% if item.bgImage %}
+    <img class='bg-image' src="{{ item.bgImage }}">
+    {% endif %} #}
+    <div class="{{ item.container }} image-{{ item.imagePosition }}">
+        <div class='row align-items-{{ item.verticalAlign }}'>
+            <div class='image'>
+                <img class='img-fluid' src="{{ item.image }}">
+            </div>
+            <div class='content'>
+                {{ item.body | markdownFilter | safe }}
+            </div>
+        </div>
+    </div>
+</section>

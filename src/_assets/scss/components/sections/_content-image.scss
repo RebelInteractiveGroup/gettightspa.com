@@ -1,0 +1,27 @@
+.section-content-image {
+    @extend .py-4;
+
+    .image {
+        @extend .col-12, .col-md-4, .order-0;
+    }
+    .content {
+        @extend .col-12, .col-md-8, .order-1;
+    }
+
+    .image-left {
+        .image {
+            @extend .order-md-0;
+        }
+        .content {
+            @extend .order-md-1;
+        }
+    }
+    .image-right {
+        .image {
+            @extend .order-md-1;
+        }
+        .content {
+            @extend .order-md-0;
+        }
+    }
+}
