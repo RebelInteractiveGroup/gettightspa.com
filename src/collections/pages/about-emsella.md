@@ -1,15 +1,15 @@
 ---
 layout: layouts/service.njk
-permalink: "/about-sculpsure/"
+permalink: "/about-emsella/"
 eleventyExcludeFromCollections: true
 socialImage: ""
-title: About SculpSure
-metaTitle: "About SculpSure"
-metaDesc: "About SculpSure"
+title: About Emsella
+metaTitle: "About Emsella"
+metaDesc: "About Emsella"
 components:
   - type: hero
     container: container
-    background: "/_assets/images/sculpsure_assets/sculpsure_homepage_hero.jpg"
+    background: "/_assets/images/emsella_assets/emsella_hero_bg.jpg"
     backgroundAttachment: none
     backgroundPosition: "center center"
     textAlign: center
@@ -26,7 +26,7 @@ components:
     body: >-
       ## Trust the Science. Love the Results.
 
-      If you’ve done everything right — proper diet, plenty of exercise — but you still struggle with problem areas of stubborn fat, it’s easy to become discouraged. Fortunately, body contouring with SculpSure® can offer permanent fat loss. If you’re ready for more definition without surgery, call Get Tight Spa in West Hartford, Connecticut, to schedule a consultation, or book an appointment online. 
+      Urinary incontinence is an embarrassing condition that affects millions of adult men and women. Emsella® is a revolutionary new system that harnesses the power of electromagnetic energy to strengthen the pelvic floor muscles. Emsella can help with all types of urinary incontinence — stress, urge, and mixed — and may also improve sexual function.
 
   - type: content-image
     container: container
@@ -36,30 +36,15 @@ components:
     backgroundPosition: "left -63px center"
     imagePosition: left
     images: 
-      - url: "/_assets/images/sculpsure_assets/marketing_materials_SculpSureMachine.jpg"
+      - url: "/_assets/images/emsculpt_assets/Emsculpt_PIC_Product-image_Chair-applicator_ENUS100.png"
     verticalAlign: top
     body: >-
-      #### What is body contouring with SculpSure? 
+      #### What is Emsella? 
 
-      SculpSure is an innovative laser system that offers permanent, targeted fat reduction in problem areas. SculpSure uses concentrated laser energy to destroy fat deposits beneath the surface of your skin, without harming your skin and surrounding tissues. 
+      Emsella is a revolutionary treatment that uses high-intensity focused electromagnetic (HIFEM) technology to improve urinary incontinence. Emsella stimulates muscle contractions in the pelvic floor and surrounding tissues to promote strength in the muscles that control the bladder and urinary system. 
 
 
-      SculpSure treatments deliver focused heat to fat cells until they become damaged. Your body’s natural immune process then gradually eliminates the damaged cells over time, resulting in enhanced definition for a more contoured silhouette. 
-
-  # - type: content-image
-  #   container: container
-  #   textAlign: center
-  #   fadeClass: fade--up
-  #   backgroundPosition: "center center"
-  #   imagePosition: right
-  #   images:
-  #     - url: "/_assets/images/emsculpt_assets/Emsculpt_PIC_Male-Female-model_unit-chair_ENUS100.png"
-  #   verticalAlign: end
-  #   body: >-
-  #     #### Am I a good candidate for Emsculpt? 
-      
-      
-  #     If you have stubborn fat or loose muscle in problem areas, and you’re generally in good health, it’s likely you’re a good candidate for Emsculpt. Schedule a consultation at Get Tight Spa, to find out for sure if body contouring with Emsculpt is right for you.
+      During a single treatment at Get Tight Spa, Emsella delivers around 11,200 contractions, which is equivalent to doing the exact same number of Kegel exercises. It would be difficult for you to do that many Kegels on your own, and many patients have difficulty isolating the necessary muscles to do Kegel exercises correctly. Emsella offers an extra intense workout for the muscles responsible for urinary control.
 
   - type: content-image
     container: container
@@ -67,46 +52,33 @@ components:
     fadeClass: fade--up
     backgroundPosition: "center center"
     imagePosition: right
-    images: 
-      - url: "/_assets/images/sculpsure_assets/SculpSure_FAQ.jpg"
+    images:
+      - url: "/_assets/images/emsella_assets/emsella-woman-sitting.jpg"
     verticalAlign: center
     body: >-
-      #### What areas can SculpSure treat? 
+      #### What conditions can Emsella address? 
+      
+      
+      Emsella uses HIFEM to improve the following conditions. 
+      
+      * Urge urinary incontinence 
+      
+      * Stress urinary incontinence 
+      
+      * Mixed urinary incontinence 
 
 
-      The specialists at Get Tight Spa have advanced training with the SculpSure 1060nm laser technology. They can safely reduce unwanted fat in the following areas: 
+      Emsella can also enhance sexual sensation and performance, especially in men and in postpartum and menopausal women.
+
+      
+      &nbsp;
 
 
-      * Upper/lower abdominals 
+      #### Am I a good candidate for Emsella? 
       
-      * Upper/lower back 
       
-      * Love handles and flanks 
-      
-      * Waist 
-      
-      * Inner/outer thighs 
-      
-      * Beneath the chin 
-      
-      * Upper arms 
-      
+      Women and men of any age who suffer from urinary incontinence and are generally in good health are candidates for Emsella therapy.
 
-      SculpSure is FDA-cleared; it’s a noninvasive procedure that requires no downtime. 
-
-  - type: content
-    container: container
-    textAlign: left
-    fadeClass: fade--up
-    verticalAlign: end
-    body: >-
-      #### How many SculpSure treatments will I need? 
-
-
-      When you have your initial consultation at Get Tight Spa, your specialist creates a personalized treatment plan based on your body composition, your personal goals for fat reduction, and other individual factors. Most of the time, a series of two sessions, four weeks apart is needed to achieve optimal results. 
-      
-      
-      It’s important to understand that SculpSure isn’t a weight loss treatment, and is best suited for people whose BMI is 30 or less. 
 
 
   - type: content-image
@@ -117,39 +89,40 @@ components:
     backgroundPosition: "center center"
     imagePosition: right
     images: 
-      - url: "/_assets/images/sculpsure_assets/SculpSure-how-it-works-bg.jpg"
-      
+      - url: "/_assets/images/emsella_assets/emsella_group_bg.jpg"
+      - url: "/_assets/images/emsella_assets/emsella_muscle_group.png"
     verticalAlign: center
     body: >-
-      #### What should I expect during a SculpSure treatment? 
-      
-      
-      SculpSure body sculpting treatments typically take about 30 minutes per treatment area. During your session, you relax in a comfortable position, and the laser applicators are attached to the treatment area. You will feel cycles of warmth and coolness. Some people describe tingling or mild cramping during the heating cycle, but nothing intolerable. The intensity of the laser can be adjusted during treatment. 
-      
-      
-      After your session, you may have some local tenderness or a small lump below the skin, but this should fade over the next few days. Gentle massages to the treatment area is encouraged to improve lymphatic flow to help remove the dead fat cells.
+      #### What should I expect during an Emsella treatment? 
+
+
+      When you have an Emsella treatment at Get Tight Spa, you don’t even need to get undressed. The Emsella system is a chair that you sit on comfortably, fully clothed. Each treatment is 28 minutes long. 
+
+
+      The chair delivers HIFEM waves through the seat; during your session, the electromagnetic energy penetrates deep into the structures of your pelvic floor to deliver thousands of contractions that improve muscle tone and increase urinary control. 
+
+
+      You’ll feel your pelvic floor muscles contracting, and you may experience some tingling during your session. There’s no downtime following treatment so you can return to daily activities right away. 
 
   - type: content-image
     container: container
     textAlign: center
     fadeClass: fade--up
+    backgroundPosition: "center center"
     imagePosition: left
     images: 
-      - url: "/_assets/images/SculpSure.jpg"
-    verticalAlign: top
+      - url: "/_assets/images/Emsella.jpg"
+    verticalAlign: center
     body: >-
-      #### When can I expect to see results after SculpSure treatment? 
+      #### When will I experience the results of Emsella? 
 
-      With laser body contouring by SculpSure, your results will appear very natural because your body eliminates targeted fat cells over a period of several weeks. Initial results should start to become visible about six weeks after your first treatment. After 12 weeks, you can enjoy the boost of confidence that comes from seeing your impressive new shape and curves. 
-      
-      
-      The fat cells targeted by SculpSure have been permanently removed; however, you’ll need to remain at a stable weight to maintain your results because remaining fat cells can plump up without proper nutrition and plenty of exercise.
 
+      You may notice an improvement shortly after your first Emsella treatment, and you’ll continue to see a gradual improvement over the next week or two after each appointment. In most cases, a series of six sessions is necessary for optimal results. Most of the time, two treatments are scheduled each week for three weeks. 
 
   - type: large-cta
     container: container
     textAlign: center
-    link: "https://www.sculpsure.com/"
+    link: "https://bodybybtl.com/solutions/btl-emsella/"
     linkText: "Click here for more information on the science and studies"
     target: _blank
     buttonType: "primary"
@@ -162,7 +135,7 @@ components:
     textAlign: center
     bgImage: "/_assets/images/GET_TIGHT_BigTextGraphic_1X.png"
     body: >-
-      #### To banish unwanted fat for a stunning new look, schedule a SculpSure consultation today  by calling Get Tight Spa today, or make an appointment online.
+      #### If you suffer from the uncomfortable symptoms of urinary incontinence, schedule an Emsella consultation by calling Get Tight Spa today, or make an appointment online.
 
   - type: large-cta
     container: container

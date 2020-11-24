@@ -198,3 +198,118 @@
     }
 }
 
+.service-about-emsella {
+    
+    #section_3 {
+        @extend .position-relative, .mb-0, .pb-0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 1;
+
+        &:before {
+            @extend .h2, .mb-3, .d-block, .text-center, .position-relative;
+            content: "Q&A";
+            z-index: 9;
+        }
+
+        .image {
+            @extend .position-relative;
+
+            img {
+                margin-top: -3rem;
+
+                @include media-breakpoint-up(md) {
+                    margin-top: -5rem;
+                }
+
+                + img {
+                    @extend .w-75;
+                    position: relative;
+                    margin-top: -55%;
+                    
+                    @include media-breakpoint-up(md) {
+                        position: absolute;
+                        margin-top: 0;
+                        right: 0;
+                        bottom: 0;
+                        transform: translateY(30%) translateX(55%);
+                    }
+                }
+            }
+        }
+    }
+    #section_4 {
+        @extend .mt-md-0, .pt-md-0;
+        overflow-x: hidden;
+
+        > .container {
+            @extend .pt-5;
+        }
+
+        // .image {
+        //     img {
+        //         transform: scale(1.5) translateY(-2rem);
+        //     }
+        // }
+    }
+    #section_5 {
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        .image {
+            @extend .position-relative;
+
+            img {
+                @extend .d-block, .ml-auto;
+                max-width: 80%;
+
+                + img {
+                    @extend .w-100, .position-absolute;
+                    max-width: 170px;
+                    left: 50%;
+                    
+                    @include media-breakpoint-up(md) {
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%) translateX(0%);
+                    }
+                }
+            }
+        }
+    }
+    .section-large-cta {
+        @extend .my-5, .py-5;
+
+        h4 {
+            @extend .text-darker;
+        }
+    }
+    #section_8 {
+        @extend .pb-5, .pt-0, .mb-4;
+
+        > div {
+            @extend .position-relative;
+            top: 0;
+            transform: translateX(0);
+        }
+    }
+    #section_9 {
+        @extend .pb-0, .mb-0;
+    }
+    #section_10 {
+        @extend .pb-5, .pt-0, .mb-4;
+
+        > div {
+            @extend .position-relative;
+            top: 0;
+            transform: translateX(0);
+        }
+
+        h3 {
+            @extend .mb-4;
+        }
+        .btn {
+            @extend .mt-4;
+        }
+    }
+}
