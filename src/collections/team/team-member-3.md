@@ -1,6 +1,6 @@
 ---
 title: 'Laura Tyler, MSN, APRN, FNP-C'
-permalink: '/laura-tyler-msn-aprn-fnp-c/'
+permalink: false
 bioImage: '/_assets/images/bio_images/laura-tyler-msn-aprn-fnp-c.png'
 popupImage: '/_assets/images/popup_images/laura-tyler-msn-aprn-fnp-c.jpg'
 linkText: 'read more'

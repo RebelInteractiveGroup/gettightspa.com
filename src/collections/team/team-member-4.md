@@ -1,6 +1,6 @@
 ---
 title: 'Demi Marie Sena, MA'
-permalink: '/demi-marie-sena-ma/'
+permalink: false
 bioImage: '/_assets/images/bio_images/demi-marie-sena-ma.png'
 popupImage: '/_assets/images/popup_images/demi-marie-sena-ma.jpg'
 linkText: 'read more'
