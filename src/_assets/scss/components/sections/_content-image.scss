@@ -1,11 +1,15 @@
 .section-content-image {
-    @extend .py-4;
+    @extend .my-4, .py-4;
 
     .image {
-        @extend .col-12, .col-md-4, .order-0;
+        @extend .col-12, .col-md-5, .order-0;
+
+        img {
+            @extend .mb-4;
+        }
     }
     .content {
-        @extend .col-12, .col-md-8, .order-1;
+        @extend .col-12, .col-md-7, .order-1;
     }
 
     .image-left {

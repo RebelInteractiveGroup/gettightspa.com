@@ -1,7 +1,7 @@
 ---
 title: 'Emsella'
 order: 2
-permalink: '/emsella-for-fat-loss-muscle-gain/'
+permalink: false
 socialImage: '/_assets/images/Emsella.jpg'
 linkText: 'Learn More'
 body: >-

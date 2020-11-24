@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: layouts/service.njk
 permalink: "/about-emsculpt/"
 eleventyExcludeFromCollections: true
 socialImage: ""
@@ -34,8 +34,10 @@ components:
     fadeClass: fade--up
     backgroundPosition: "center center"
     imagePosition: left
-    image: "/_assets/images/emsculpt_assets/Emsculpt_PIC_Product-image_Unit_ENUS100.png"
-    verticalAlign: center
+    images: 
+      - url: "/_assets/images/emsculpt_assets/Emsculpt_PIC_Product-image_Unit_ENUS100.png"
+      - url: "/_assets/images/emsculpt_assets/Emsculpt_PIC_Product-image_Chair-applicator_ENUS100.png"
+    verticalAlign: top
     body: >-
       #### What is Emsculpt? 
 
@@ -47,7 +49,8 @@ components:
     fadeClass: fade--up
     backgroundPosition: "center center"
     imagePosition: right
-    image: "/_assets/images/emsculpt_assets/Emsculpt_PIC_Male-Female-model_unit-chair_ENUS100.png"
+    images:
+      - url: "/_assets/images/emsculpt_assets/Emsculpt_PIC_Male-Female-model_unit-chair_ENUS100.png"
     verticalAlign: end
     body: >-
       #### Am I a good candidate for Emsculpt? 
@@ -61,7 +64,9 @@ components:
     fadeClass: fade--up
     backgroundPosition: "center center"
     imagePosition: left
-    image: "/_assets/images/emsculpt_assets/Emsculpt_PIC_Male-model-Applicator-abdomen-052.jpg"
+    images: 
+      - url: "/_assets/images/emsculpt_assets/Emsculpt_PIC_Male-model-Applicator-abdomen-052.jpg"
+      - url: "/_assets/images/emsculpt_assets/Emsculpt_PIC_Female-model-Applicator-buttock-007.jpg"
     verticalAlign: center
     body: >-
       #### Which areas can Emsculpt treat? 
@@ -92,7 +97,8 @@ components:
     fadeClass: fade--up
     backgroundPosition: "center center"
     imagePosition: right
-    image: "/_assets/images/emsculpt_assets/Emsculpt_PIC_Small-applicator-001_ENUS100.jpg"
+    images: 
+      - url: "/_assets/images/emsculpt_assets/Emsculpt_PIC_Small-applicator-001_ENUS100.jpg"
     verticalAlign: end
     body: >-
       #### What should I expect during an Emsculpt treatment? 
@@ -109,7 +115,9 @@ components:
     fadeClass: fade--up
     backgroundPosition: "center center"
     imagePosition: left
-    image: "/_assets/images/EmSculpt.jpg"
+    images: 
+      - url: "/_assets/images/EmSculpt.jpg"
+      
     verticalAlign: center
     body: >-
       #### When will I see results? 

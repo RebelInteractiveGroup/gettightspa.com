@@ -1,7 +1,7 @@
 ---
 title: 'EmSculpt'
 order: 0
-permalink: '/emsculpt-for-fat-loss-muscle-gain/'
+permalink: false
 socialImage: '/_assets/images/EmSculpt.jpg'
 linkText: 'Learn More'
 body: >-

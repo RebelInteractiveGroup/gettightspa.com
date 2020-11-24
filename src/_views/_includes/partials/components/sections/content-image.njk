@@ -5,7 +5,9 @@
     <div class="{{ item.container }} image-{{ item.imagePosition }}">
         <div class='row align-items-{{ item.verticalAlign }}'>
             <div class='image'>
-                <img class='img-fluid' src="{{ item.image }}">
+                {% for image in item.images %}
+                    <img class='img-fluid' src="{{ image.url }}">
+                {% endfor %}
             </div>
             <div class='content'>
                 {{ item.body | markdownFilter | safe }}
