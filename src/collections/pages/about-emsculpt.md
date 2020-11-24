@@ -171,70 +171,84 @@ components:
 
     slides:
       - type: before-after
-        text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
         beforeImage: "/_assets/images/before_after_emsculpt/1_EmSculpt_Before.jpg"
         beforeImageAlt: "Before Emsculpt"
         afterImage: "/_assets/images/before_after_emsculpt/1_EmSculpt_After.jpg"
         afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
 
       - type: before-after
-        text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
+        beforeImage: "/_assets/images/before_after_sculpsure/gettightspa_sculpsure_flanks_-_before.jpg"
+        beforeImageAlt: "Before SculpSure"
+        afterImage: "/_assets/images/before_after_sculpsure/gettightspa_sculpsure_flanks_-_after.jpg"
+        afterImageAlt: "After SculpSure*\n <small>*after 2 treatments</small>"
+
+      - type: before-after
         beforeImage: "/_assets/images/before_after_emsculpt/2_EmSculpt_Before.jpg"
         beforeImageAlt: "Before Emsculpt"
         afterImage: "/_assets/images/before_after_emsculpt/2_EmSculpt_After.jpg"
         afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
 
       - type: before-after
-        text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
+        beforeImage: "/_assets/images/before_after_sculpsure/gettightspa_sculpsure_inner_thighs_-_before.jpg"
+        beforeImageAlt: "Before SculpSure"
+        afterImage: "/_assets/images/before_after_sculpsure/gettightspa_sculpsure_inner_thighs_-_after.jpg"
+        afterImageAlt: "After SculpSure*\n <small>*after 2 treatments</small>"
+
+      - type: before-after
         beforeImage: "/_assets/images/before_after_emsculpt/3_EmSculpt_Before.jpg"
         beforeImageAlt: "Before Emsculpt"
         afterImage: "/_assets/images/before_after_emsculpt/3_EmSculpt_After.jpg"
         afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
 
       - type: before-after
-        text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
+        beforeImage: "/_assets/images/before_after_sculpsure/gettightspa_sculpsure_lower_abdomen_-_before.jpg"
+        beforeImageAlt: "Before SculpSure"
+        afterImage: "/_assets/images/before_after_sculpsure/gettightspa_sculpsure_lower_abdomen_-_after.jpg"
+        afterImageAlt: "After SculpSure*\n <small>*after 2 treatments</small>"
+
+      - type: before-after
         beforeImage: "/_assets/images/before_after_emsculpt/4_EmSculpt_Before.jpg"
         beforeImageAlt: "Before Emsculpt"
         afterImage: "/_assets/images/before_after_emsculpt/4_EmSculpt_After.jpg"
         afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
 
       - type: before-after
-        text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
+        beforeImage: "/_assets/images/before_after_sculpsure/gettightspa_sculpsure_upper___lower_abdomen_-_before.jpg"
+        beforeImageAlt: "Before SculpSure"
+        afterImage: "/_assets/images/before_after_sculpsure/gettightspa_sculpsure_upper___lower_abdomen_-_after.jpg"
+        afterImageAlt: "After SculpSure*\n <small>*after 2 treatments</small>"
+
+      - type: before-after
         beforeImage: "/_assets/images/before_after_emsculpt/5_EmSculpt_Before.jpg"
         beforeImageAlt: "Before Emsculpt"
         afterImage: "/_assets/images/before_after_emsculpt/5_EmSculpt_After.jpg"
         afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
 
       - type: before-after
-        text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
         beforeImage: "/_assets/images/before_after_emsculpt/6_EmSculpt_Before.jpg"
         beforeImageAlt: "Before Emsculpt"
         afterImage: "/_assets/images/before_after_emsculpt/6_EmSculpt_After.jpg"
         afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
 
       - type: before-after
-        text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
         beforeImage: "/_assets/images/before_after_emsculpt/7_EmSculpt_Before.jpg"
         beforeImageAlt: "Before Emsculpt"
         afterImage: "/_assets/images/before_after_emsculpt/7_EmSculpt_After.jpg"
         afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
 
       - type: before-after
-        text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
         beforeImage: "/_assets/images/before_after_emsculpt/8_EmSculpt_Before.jpg"
         beforeImageAlt: "Before Emsculpt"
         afterImage: "/_assets/images/before_after_emsculpt/8_EmSculpt_After.jpg"
         afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
 
       - type: before-after
-        text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
         beforeImage: "/_assets/images/before_after_emsculpt/9_EmSculpt_Before.jpg"
         beforeImageAlt: "Before Emsculpt"
         afterImage: "/_assets/images/before_after_emsculpt/9_EmSculpt_After.jpg"
         afterImageAlt: "After Emsculpt*\n <small>*after 4 treatments</small>"
 
       - type: before-after
-        text: "\"I work out 3-4 days a week and this really improved my ab workout. I’m so thankful for this treatment; it made me feel strong again.\""
         beforeImage: "/_assets/images/before_after_emsculpt/10_EmSculpt_Before.jpg"
         beforeImageAlt: "Before Emsculpt"
         afterImage: "/_assets/images/before_after_emsculpt/10_EmSculpt_After.jpg"
