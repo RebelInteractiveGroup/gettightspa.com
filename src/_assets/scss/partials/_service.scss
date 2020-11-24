@@ -1,8 +1,16 @@
 .service-about-emsculpt {
     #section_3 {
+        @extend .position-relative;
         background-size: contain;
         background-repeat: no-repeat;
-        
+        z-index: 1;
+
+        &:before {
+            @extend .h2, .mb-3, .d-block, .text-center;
+            content: "Q&A";
+
+        }
+
         .image {
             @extend .position-relative;
 

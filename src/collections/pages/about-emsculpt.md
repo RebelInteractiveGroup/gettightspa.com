@@ -24,7 +24,7 @@ components:
     backgroundPosition: "center center"
     teamListHeading: "How do you want to get tight?"
     body: >-
-      ## Trust the Science. Love the Results.
+      ## Emsculpt
 
       If you have stubborn areas that aren’t as toned or defined as you’d like, Emsculpt® is a cutting-edge treatment that is both a functional and aesthetic solution. Emsculpt doesn’t just remove fat; it builds muscle, for a sleeker, stronger, and more defined silhouette.
 
@@ -130,8 +130,9 @@ components:
   - type: large-cta
     container: container
     textAlign: center
-    link: "#"
+    link: "https://bodybybtl.com/solutions/emsculpt/"
     linkText: "Click here for more information on the science and studies"
+    target: _blank
     buttonType: "primary"
     btnSize: "lg"
     bgImage: ""
