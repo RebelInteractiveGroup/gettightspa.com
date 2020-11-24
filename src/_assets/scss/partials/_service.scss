@@ -1,9 +1,67 @@
-.content-service {
-//   @extend .container;
-
-    &.about-emsculpt {
+.service-about-emsculpt {
+    #section_3 {
+        background-size: contain;
+        background-repeat: no-repeat;
         
+        .image {
+            @extend .position-relative;
 
+            img {
+                margin-top: -5rem;
 
+                & + img {
+                    @extend .position-absolute, .w-75;
+                    margin-top: 0;
+                    right: 0;
+                    bottom: 0;
+                    transform: translateY(30%) translateX(55%);
+                }
+            }
+        }
+    }
+    #section_4 {
+        @extend .mt-md-0, .pt-md-0;
+
+        .image {
+            img {
+                transform: scale(1.5) translateY(-2rem);
+            }
+        }
+    }
+    #section_5 {
+        .content {
+            @extend .py-5;
+        }
+    }
+    #section_6 {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .section-large-cta {
+        @extend .my-5, .py-5;
+
+        h4 {
+            @extend .text-darker;
+        }
+    }
+    #section_9 {
+        @extend .pb-0, .mb-0;
+    }
+    #section_10 {
+        @extend .pb-5, .pt-0, .mb-4;
+
+        > div {
+            @extend .position-relative;
+            top: 0;
+            transform: translateX(0);
+        }
+
+        h3 {
+            @extend .mb-4;
+        }
+        .btn {
+            @extend .mt-4;
+        }
     }
 }
+

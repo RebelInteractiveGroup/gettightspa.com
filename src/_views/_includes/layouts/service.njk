@@ -1,7 +1,7 @@
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
-  <main class="content content-service {{ permalink | replace( '\/', '' ) }}" id="main-content" tabindex="-1">
+  <main class="content content-service service-{{ permalink | slug }}" id="main-content" tabindex="-1">
     <article>
       {% for item in components %}
         {% include "partials/components/sections/" + item.type + ".njk" %}

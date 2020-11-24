@@ -1,4 +1,4 @@
-<section class="section section-content-image">
+<section class="section section-content-image" id="section_{{ loop.index }}" style="{% if item.background %}background-image: url({{ item.background }}); background-position:{{ item.backgroundPosition }};{% endif %}">
     {# {% if item.bgImage %}
     <img class='bg-image' src="{{ item.bgImage }}">
     {% endif %} #}

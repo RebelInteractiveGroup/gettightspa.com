@@ -32,7 +32,8 @@ components:
     container: container
     textAlign: center
     fadeClass: fade--up
-    backgroundPosition: "center center"
+    background: "/_assets/images/diamond_graphic_vertical.svg"
+    backgroundPosition: "left -63px center"
     imagePosition: left
     images: 
       - url: "/_assets/images/emsculpt_assets/Emsculpt_PIC_Product-image_Unit_ENUS100.png"
@@ -95,6 +96,7 @@ components:
     container: container
     textAlign: center
     fadeClass: fade--up
+    background: "/_assets/images/Diamond_Graphic_Pattern.svg"
     backgroundPosition: "center center"
     imagePosition: right
     images: 
@@ -124,6 +126,37 @@ components:
       
       
       You should notice some improvement in the treated area right after your Emsculpt session. Typically, four Emsculpt treatments scheduled 2-5 days apart are needed for optimal results, with maximum results becoming visible 4-8 weeks after your final session. 
+
+  - type: large-cta
+    container: container
+    textAlign: center
+    link: "#"
+    linkText: "Click here for more information on the science and studies"
+    buttonType: "primary"
+    btnSize: "lg"
+    bgImage: ""
+    body: >-
+
+  - type: large-cta
+    container: container
+    textAlign: center
+    bgImage: "/_assets/images/GET_TIGHT_BigTextGraphic_1X.png"
+    body: >-
+      #### If you’d like a firmer, stronger physique, schedule an Emsculpt consultation by calling Get Tight Spa today, or make an appointment online.
+
+  - type: large-cta
+    container: container
+    textAlign: center
+    link: "#"
+    linkText: "Book a Consultation"
+    buttonType: "primary"
+    btnSize: "lg"
+    bgImage: ""
+    body: >-
+      ### <a class="navbar-phone" href="tel:860.206.4825">860.206.4825</a>
+
+
+
 
   - type: content-carousel
     container: container
