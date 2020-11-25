@@ -1,7 +1,6 @@
 ---
 layout: layouts/service.njk
 permalink: "/about-emsculpt/"
-eleventyExcludeFromCollections: true
 socialImage: ""
 title: About Emsculpt
 metaTitle: "About Emsculpt"

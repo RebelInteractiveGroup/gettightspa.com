@@ -1,7 +1,6 @@
 ---
 layout: layouts/service.njk
 permalink: "/about-sculpsure/"
-eleventyExcludeFromCollections: true
 socialImage: ""
 title: About SculpSure
 metaTitle: "About SculpSure"

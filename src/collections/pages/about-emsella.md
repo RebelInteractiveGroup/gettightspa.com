@@ -1,7 +1,6 @@
 ---
 layout: layouts/service.njk
 permalink: "/about-emsella/"
-eleventyExcludeFromCollections: true
 socialImage: ""
 title: About Emsella
 metaTitle: "About Emsella"

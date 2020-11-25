@@ -75,25 +75,25 @@ $(function(){
         }, 1500);
     });
 
-    console.log(window.location.hostname);
+    // console.log(window.location.hostname);
 
-    $('#main-header').find('.nav-link').on('click', function(e) {
-        e.preventDefault();
-        var target = $(this).attr("href");
-        var index = $(this).parent().index();
+    // $('#main-header').find('.nav-link').on('click', function(e) {
+    //     e.preventDefault();
+    //     var target = $(this).attr("href");
+    //     var index = $(this).parent().index();
 
-        var host = window.location.hostname;
+    //     var host = window.location.hostname;
 
-            console.log(host);
+    //         console.log(host);
 
-        if(host == 'www.gettightspa.com' || host == 'gettightspa.com') {
-            target = (index == 0 ? '.section-content' : '.section-services');
-            $('html, body').scrollTop($(target).offset().top - ($("header.banner").outerHeight()));
-        }
-        else {
-            window.location = target;
-        }
-    });
+    //     if(host == 'www.gettightspa.com' || host == 'gettightspa.com') {
+    //         target = (index == 0 ? '.section-content' : '.section-services');
+    //         $('html, body').scrollTop($(target).offset().top - ($("header.banner").outerHeight()));
+    //     }
+    //     else {
+    //         window.location = target;
+    //     }
+    // });
 
     var $carousel = $(".carousel").carousel();
     $carousel.carousel("pause");
