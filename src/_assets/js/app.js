@@ -88,9 +88,7 @@ $(function(){
 
         if(host == 'www.gettightspa.com' || host == 'gettightspa.com') {
             target = (index == 0 ? '.section-content' : '.section-services');
-            $('html, body').stop().animate({
-                scrollTop: $(target).offset().top - ($("header.banner").outerHeight())
-            }, 1500);
+            $('html, body').scrollTop($(target).offset().top - ($("header.banner").outerHeight()));
         }
         else {
             //window.location = target;
