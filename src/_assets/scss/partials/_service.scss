@@ -79,6 +79,10 @@
     }
     #section_9 {
         @extend .pb-0, .mb-0;
+
+        @include media-breakpoint-down(md) {
+            min-height: 33vh;
+        }
     }
     #section_10 {
         @extend .pb-5, .pt-0, .mb-4;
@@ -270,13 +274,12 @@
                 + img {
                     @extend .w-100, .position-absolute;
                     max-width: 170px;
-                    left: 50%;
-                    
-                    @include media-breakpoint-up(md) {
-                        top: 50%;
-                        left: 0;
-                        transform: translateY(-50%) translateX(0%);
-                    }
+
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%) translateX(0%);
+
+    
                 }
             }
         }
@@ -299,6 +302,10 @@
     }
     #section_8 {
         @extend .py-0, .mb-0;
+
+        @include media-breakpoint-down(md) {
+            min-height: 33vh;
+        }
     }
     #section_9 {
         @extend .pb-5, .pt-0, .mb-4;
