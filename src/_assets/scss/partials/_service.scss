@@ -169,7 +169,7 @@
         }
     }
     #section_8 {
-        @extend .pb-5, .pt-0, .mb-4;
+        @extend .pb-5, .pt-0, .mb-0, .mb-md-4;
 
         > div {
             @extend .position-relative;
@@ -179,6 +179,10 @@
     }
     #section_9 {
         @extend .py-0, .mb-0;
+
+        @include media-breakpoint-down(md) {
+            min-height: 33vh;
+        }
     }
     #section_10 {
         @extend .pb-5, .pt-0, .mb-4;
