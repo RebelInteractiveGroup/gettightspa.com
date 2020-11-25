@@ -77,6 +77,8 @@ $(function(){
         }, 1500);
     });
 
+    console.log(window.location.hostname);
+
     $('#main-header').find('.nav-link').on('click', function(e) {
         e.preventDefault();
         var target = $(this).attr("href");
