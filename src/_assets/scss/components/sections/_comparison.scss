@@ -36,7 +36,11 @@
         @extend .row, .row-cols-1, .row-cols-md-2, .list-unstyled;
         
         li {
-            @extend .p-3;
+            @extend .p-3, .position-relative;
+
+            p {
+                @extend .mt-4, .mt-md-0;
+            }
         }
         li:not(:first-child) {
             border-top: solid 3px $white;
@@ -49,8 +53,27 @@
 
         @include media-breakpoint-down(md) {
             li {
+
+                
                 &:nth-child(odd) {
                     background: linear-gradient(0deg, #F68929 0.02%, #FFFFFF 100%);
+
+                    &:after {
+                        content: 'VS';
+                        position: absolute;
+                        left: 50%;
+                        bottom: 0;
+                        transform: translateX(-50%) translateY(50%);
+                        border-radius: 50%;
+                        width: 30px;
+                        height: 30px;
+                        font-size: 14px;
+                        background-color: $dark-orange;
+                        color: $white;
+                        text-align: center;
+                        line-height: 30px;
+                        z-index: 2;
+                    }
                 }
                 &:nth-child(even) {
                     background: linear-gradient(180deg, rgba(255,255,255,0.5) 0%, #46A0AD 100%);
