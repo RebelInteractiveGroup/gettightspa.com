@@ -91,7 +91,7 @@ $(function(){
             $('html, body').scrollTop($(target).offset().top - ($("header.banner").outerHeight()));
         }
         else {
-            //window.location = target;
+            window.location = target;
         }
     });
 
