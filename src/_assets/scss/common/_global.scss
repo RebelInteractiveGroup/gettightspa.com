@@ -3,6 +3,10 @@ body {
   min-height: 100vh;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @extend .d-flex, .flex-column;
 
