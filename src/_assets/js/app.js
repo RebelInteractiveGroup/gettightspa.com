@@ -79,18 +79,21 @@ $(function(){
 
     $('#main-header').find('.nav-link').on('click', function(e) {
         e.preventDefault();
-        var target = $(this).attr("href");
+        //var target = $(this).attr("href");
         var index = $(this).parent().index();
 
+        console.log(host);
+    
+        target = (index == 0 ? '.section-content' : '.section-services');
+        $('html, body').stop().animate({
+            scrollTop: $(target).offset().top - ($("header.banner").outerHeight())
+        }, 1500);
 
         if(host == 'gettightspa.com') {
-            target = (index == 0 ? '.section-content' : '.section-services');
-            $('html, body').stop().animate({
-                scrollTop: $(target).offset().top - ($("header.banner").outerHeight())
-            }, 1500);
+            
         }
         else {
-            window.location.href = target;
+            window.location = target;
         }
     });
 
