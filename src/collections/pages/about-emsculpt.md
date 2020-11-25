@@ -9,9 +9,9 @@ metaDesc: "About Emsculpt"
 components:
   - type: hero
     container: container
-    background: "/_assets/images/emsculpt_assets/Emsculpt_PIC_Small-applicator-003_ENUS100.jpg"
+    background: "/_assets/images/gettightspa-emsculpt-hero.jpg"
     backgroundAttachment: none
-    backgroundPosition: "center center"
+    backgroundPosition: "top center"
     textAlign: center
     fadeClass: fade--in fade--load
     flexRowOrder: row
