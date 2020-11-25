@@ -148,7 +148,7 @@ components:
   - type: large-cta
     container: container
     textAlign: center
-    link: "{{ site.url }}#contact-form"
+    link: "/#contact-form"
     linkText: "Book a Consultation"
     buttonType: "primary"
     btnSize: "lg"
