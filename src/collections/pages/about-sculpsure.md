@@ -175,8 +175,40 @@ components:
     body: >-
       ### <a class="navbar-phone" href="tel:860.206.4825">860.206.4825</a>
 
+  - type: comparison
+    container: container
+    textAlign: center
+    headingText: >-
+       ## SculpSure vs. CoolSculpting
+    body: >-
+      * Warm sculpting laser system
 
+      * Cool sculpting laser system
 
+      * 25 mins per treatment area
+
+      * 35 mins – 1 hr. per treatment area
+
+      * Variety of shapes and sizes: <br> BMI up to 30 for body areas, 40 for submental 	
+      
+      * Limited amount of fat able to be suctioned into applicator     
+          
+      * Better tolerated
+
+      * Increased discomfort w/post treatment massage
+
+      * Mild side effects: tenderness, swelling, small nodules, tissue firmness
+      
+      * More, reported side effects: redness, swelling, blanching, bruising, aching, burning, sensitivity, stinging, cramping, paroxysmal adipose hyperplasia (PAH), 
+      where fat cells have opposite effect, increase in size, rather than decrease,may require surgical removal), <br> > 20% non-responder rate
+
+      * Diffusing of heat provides natural look
+
+      * Cooling can cause skin unevenness
+
+      * 83-100% pt satisfaction rate
+    
+      * 73-93% pt satisfaction rate
 
   - type: content-carousel
     container: container

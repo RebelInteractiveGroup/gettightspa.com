@@ -1,0 +1,7 @@
+<section class="section section-comparison" id="section_{{ loop.index }}">
+    <div class="{{ item.container }}">
+        {{ item.headingText | markdownFilter | safe }}
+
+        {{ item.body | markdownFilter | safe }}
+    </div>
+</section>

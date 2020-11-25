@@ -1,0 +1,50 @@
+.section-comparison {
+    @extend .my-0, .py-3, .position-relative;
+
+    h2 {
+        @extend .text-center, .mb-4, .text-break;
+    }
+
+    &:before,
+    &:after {
+         @extend .position-absolute, .w-50;
+        content: '';
+        display: block;
+        top: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+
+    &:before {
+        left: 0;
+        background: linear-gradient(0deg, #F68929 0.02%, #FFFFFF 100%);
+    }
+    &:after {
+        right: 0;
+        background: linear-gradient(180deg, rgba(255,255,255,0.5) 0%, #46A0AD 100%);
+    }
+    
+    .container {
+        @extend .position-relative;
+        z-index: 1;
+    }
+
+    ul {
+        @extend .row, .row-cols-1, .row-cols-md-2, .list-unstyled;
+        
+        li {
+            @extend .p-3;
+        }
+        li:not(:first-child) {
+            border-top: solid 3px $white;
+        }
+        li:first-child {
+            + li {
+                border-top: 0;
+            }
+        }
+        // li:nth-child(even) {
+            
+        // }
+    }
+}
