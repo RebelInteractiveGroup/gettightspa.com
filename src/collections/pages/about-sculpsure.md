@@ -11,7 +11,7 @@ components:
     container: container
     background: "/_assets/images/sculpsure_homepage_hero.jpg"
     backgroundAttachment: none
-    backgroundPosition: "center center"
+    backgroundPosition: "top center"
     textAlign: center
     fadeClass: fade--in fade--load
     flexRowOrder: row
