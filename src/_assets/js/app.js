@@ -93,7 +93,7 @@ $(function(){
             }, 1500);
         }
         else {
-            window.location = target;
+            //window.location = target;
         }
     });
 
