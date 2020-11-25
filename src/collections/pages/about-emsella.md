@@ -9,7 +9,7 @@ metaDesc: "About Emsella"
 components:
   - type: hero
     container: container
-    background: "/_assets/images/sculpsure_homepage_hero.jpg"
+    background: "/_assets/images/emsella_homepage_hero.jpg"
     backgroundAttachment: none
     backgroundPosition: "center center"
     textAlign: center
