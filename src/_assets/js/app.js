@@ -53,8 +53,6 @@ $(window).on('load', function(){
 $(function(){
     var shrinkTrigger = parseInt($("#main-header").height() * 0.25);
 
-    var host = window.location.hostname;
-
     $(window).scroll(function(){
         if($(this).scrollTop()>=shrinkTrigger){
             $("#main-header").find(".navbar, .navbar-brand").addClass("shrink");
