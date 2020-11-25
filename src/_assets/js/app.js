@@ -53,6 +53,8 @@ $(window).on('load', function(){
 $(function(){
     var shrinkTrigger = parseInt($("#main-header").height() * 0.25);
 
+    var host = window.location.hostname;
+
     $(window).scroll(function(){
         if($(this).scrollTop()>=shrinkTrigger){
             $("#main-header").find(".navbar, .navbar-brand").addClass("shrink");
@@ -75,14 +77,21 @@ $(function(){
         }, 1500);
     });
 
-    $('header.banner .nav-link').click(function(e) {
+    $('#main-header').find('.nav-link').on('click', function(e) {
         e.preventDefault();
-
         var target = $(this).attr("href");
+        var index = $(this).parent().index();
 
-        $('html, body').stop().animate({
-            scrollTop: $(target).offset().top - ($("header.banner").outerHeight())
-        }, 1500);
+
+        if(host == 'gettightspa.com') {
+            target = (index == 0 ? '.section-content' : '.section-services');
+            $('html, body').stop().animate({
+                scrollTop: $(target).offset().top - ($("header.banner").outerHeight())
+            }, 1500);
+        }
+        else {
+            window.location.href = target;
+        }
     });
 
     var $carousel = $(".carousel").carousel();

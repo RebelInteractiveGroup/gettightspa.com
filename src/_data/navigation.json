@@ -4,25 +4,25 @@
   "items": [
     {
       "text": "About Us",
-      "url": ".section-content",
+      "url": "/about-get-tight/",
       "external": false
     },
     {
       "text": "Emsculpt",
       "supportingText": "for Fat Loss & Muscle Gain",
-      "url": ".section-services",
+      "url": "/about-emsculpt/",
       "external": false
     },
     {
       "text": "SculpSure",
       "supportingText": "for Fat Loss & Body Contouring",
-      "url": ".section-services",
+      "url": "/about-sculpsure/",
       "external": false
     },
     {
       "text": "Emsella ",
       "supportingText": "for Pelvic Muscle Stimulation",
-      "url": ".section-services",
+      "url": "/about-emsella/",
       "external": false
     }
   ]
