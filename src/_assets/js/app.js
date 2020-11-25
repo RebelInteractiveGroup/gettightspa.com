@@ -86,7 +86,7 @@ $(function(){
 
             console.log(host);
 
-        if(host == 'gettightspa.com') {
+        if(host == 'www.gettightspa.com' || host == 'gettightspa.com') {
             target = (index == 0 ? '.section-content' : '.section-services');
             $('html, body').stop().animate({
                 scrollTop: $(target).offset().top - ($("header.banner").outerHeight())
